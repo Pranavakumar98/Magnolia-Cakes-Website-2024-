@@ -629,7 +629,7 @@ def video(request):
         serializer = VideoSerializer(items, many=True)
         return Response(serializer.data)
 
-
+'''
 @api_view(["GET", "POST"])
 @permission_classes([AllowAny])
 def log_quote(request):
@@ -642,7 +642,72 @@ def log_quote(request):
 
             return Response({"message": "Quote data logged"}, status=status.HTTP_200_OK)
         return Response({"serializer_errors": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+'''
+@api_view(["GET", "POST"])
+@permission_classes([AllowAny])
+def log_quote(request):
+    if request.method == "GET":
+        return Response({
+            "message": "Get a Quote endpoint is ready. Please send a POST request with the form data to submit.",
+            "required_fields": ["name", "email", "servings_or_amount"],
+            "optional_fields": ["mobile", "product_type", "serves", "date_of_event", "flavour", "filling"]
+        }, status=status.HTTP_200_OK)
     
+    elif request.method == "POST":
+        serializer = QuoteSerializer(data=request.data)
+        if serializer.is_valid():
+            quote = serializer.save()
+            
+            # Prepare email
+            subject = f"New Quote Request from {quote.name}"
+            message = f"""
+            A new quote request has been submitted:
+            
+            Name: {quote.name}
+            Email: {quote.email}
+            Mobile: {quote.mobile or 'Not provided'}
+            Product Type: {quote.product_type or 'Not specified'}
+            Servings/Amount: {quote.servings_or_amount}
+            Serves: {quote.serves or 'Not specified'}
+            Date of Event: {quote.date_of_event or 'Not specified'}
+            Flavour: {quote.flavour or 'Not specified'}
+            Filling: {quote.filling or 'Not specified'}
+            Time Submitted: {quote.time_submitted}
+            """
+
+            admin_email_obj = ContactUsEmail.objects.first()
+            backup_emails = BackupEmail.objects.all()
+
+            to_emails = [admin_email_obj.your_email] if admin_email_obj else []
+            to_emails.extend([e.email for e in backup_emails])
+
+            if not to_emails:
+                return Response(
+                    {"message": "Quote saved, but no admin email configured to send notification."},
+                    status=status.HTTP_200_OK
+                )
+
+            try:
+                email = EmailMessage(
+                    subject,
+                    message,
+                    settings.EMAIL_FROM,
+                    to=to_emails,
+                    reply_to=[quote.email]  # Set Reply-To header to customer's email
+                )
+                email.send()
+                return Response(
+                    {"message": "Quote submitted successfully and notification sent."},
+                    status=status.HTTP_201_CREATED
+                )
+            except Exception as error:
+                print(f"Email sending error: {str(error)}")  # Log the error
+                return Response(
+                    {"message": "Quote saved but there was a problem sending email notification."},
+                    status=status.HTTP_201_CREATED
+                )
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 @api_view(['GET'])
 def get_videos(request):
     if request.method == "GET":
