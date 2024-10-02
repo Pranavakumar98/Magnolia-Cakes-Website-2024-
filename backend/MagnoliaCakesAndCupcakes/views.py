@@ -39,8 +39,15 @@ import stripe
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import get_object_or_404
-
+from django.core.mail import send_mail
+from django.http import HttpResponse
 import requests
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from rest_framework import status
+from django.core.mail import send_mail
+from django.conf import settings
 
 import urllib.request
 
@@ -95,8 +102,8 @@ def activateEmail(request, user, to_email):
     }
 
     message = render_to_string("template_activate_account.html", context)
-
-    email = EmailMessage(mail_subject, message, to=[to_email])
+    #added email_from
+    email = EmailMessage(mail_subject, message, settings.EMAIL_FROM, to=[to_email])
     try:
         if email.send():
             return Response(
@@ -212,7 +219,21 @@ def terms_and_conditions(request):
             )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def test_email(request):
+    try:
+        send_mail(
+            'Test Subject',
+            'Test Message',
+            settings.EMAIL_FROM,
+            ['pranavakumar98@gmail.com'],  # Replace with a test email address
+            fail_silently=False,
+        )
+        return Response({"message": "Test email sent successfully"}, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({"error": f"Failed to send test email. Error: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+'''
 @api_view(["GET", "POST"])
 @permission_classes(
     [AllowAny]
@@ -223,6 +244,7 @@ def contact(request):
     
     # Divert contact us to send the email to admin
     else:
+        
         form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
             user_email = form.cleaned_data["email"]
@@ -237,8 +259,8 @@ def contact(request):
 
             for e in backup_emails:
                 to_emails.append(e.email)
-
-            email = EmailMessage(subject, message, to=to_emails, cc=[user_email])
+            #added Settings.Email_From
+            email = EmailMessage(subject, message,settings.EMAIL_FROM, to=to_emails, cc=[user_email])
 
             for f in file:
                 email.attach(f.name, f.read(), f.content_type)
@@ -258,11 +280,73 @@ def contact(request):
             )
         else:
             return Response(
-                {"message": "Contact failed"},
+                {"message": "Contact failed","errors": form.errors},
                 status=status.HTTP_400_BAD_REQUEST,
             )
     return render(request, "email.html", {"form": form})
+'''
+@api_view(["GET", "POST"])
+@permission_classes([AllowAny])
+def contact(request):
+    if request.method == "GET":
+        return Response({
+            "message": "Contact form endpoint is ready. Please send a POST request with the form data to submit.",
+            "required_fields": ["email", "subject", "message"],
+            "optional_fields": ["file"]
+        }, status=status.HTTP_200_OK)
+    
+    elif request.method == "POST":
+        form = ContactForm(request.data, request.FILES)
+        if form.is_valid():
+            user_email = form.cleaned_data["email"]
+            subject = form.cleaned_data["subject"]
+            message = form.cleaned_data["message"]
+            files = request.FILES.getlist("file")
 
+            admin_email_obj = ContactUsEmail.objects.first()
+            backup_emails = BackupEmail.objects.all()
+
+            to_emails = [admin_email_obj.your_email] if admin_email_obj else []
+            to_emails.extend([e.email for e in backup_emails])
+
+            if not to_emails:
+                return Response(
+                    {"message": "No admin email configured. Please contact the site administrator."},
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
+
+            email = EmailMessage(
+                subject, 
+                message,
+                settings.EMAIL_FROM, 
+                to=to_emails, 
+                cc=[user_email],
+                reply_to=[user_email]
+            )
+
+            for f in files:
+                email.attach(f.name, f.read(), f.content_type)
+
+            try:
+                email.send()
+                return Response(
+                    {"message": "Success! Your message has been sent."}, 
+                    status=status.HTTP_200_OK
+                )
+            except Exception as error:
+                print(f"Email sending error: {str(error)}")  # Log the error
+                return Response(
+                    {
+                        "message": "Problem sending email. Please contact an administrator.",
+                        "error": str(error)
+                    },
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
+        else:
+            return Response(
+                {"message": "Invalid form data", "errors": form.errors},
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
 @api_view(["GET"])
 @permission_classes(

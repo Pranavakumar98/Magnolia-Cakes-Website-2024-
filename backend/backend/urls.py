@@ -82,6 +82,8 @@ urlpatterns = [
     path("api/homepage-welcome/", views.welcome_section, name="welcome-section"),
     path("api/homepage-about-us/", views.about_us_section, name="about-us-section"),
     path("api/homepage-gallery/", views.gallery_section, name="gallery-section"),
+
+    path('api/test-email/', views.test_email, name='test_email'),
     
     # JWT token creation
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),

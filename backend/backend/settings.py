@@ -35,7 +35,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [BACKEND_URL]
+ALLOWED_HOSTS = [BACKEND_URL,'localhost']
 
 
 # Application definition
@@ -179,6 +179,7 @@ STATICFILES_FINDERS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+'''
 
 # Emailing settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -191,6 +192,18 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587 
 EMAIL_USE_TLS = True
 PASSWORD_RESET_TIMEOUT = 14400 		# How long the verification link is valid for 
+'''
+# Emailing settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_FROM = 'contact@magnoliacake.com.au'
+DEFAULT_FROM_EMAIL = 'contact@magnoliacake.com.au'
+SERVER_EMAIL = 'contact@magnoliacake.com.au'
+EMAIL_HOST = 'smtp.office365.com'  # Microsoft 365 SMTP server
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # This should be 'contact@magnoliacake.com.au'
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Your Microsoft 365 email password
+EMAIL_PORT = 587 
+EMAIL_USE_TLS = True
+PASSWORD_RESET_TIMEOUT = 14400  # How long the verification link is valid for
 
 GS_BUCKET_NAME = config('GS_BUCKET_NAME')
 GS_PROJECT_ID = config('GS_PROJECT_ID')
