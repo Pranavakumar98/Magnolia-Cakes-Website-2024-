@@ -20,6 +20,7 @@
 
 .welcome-body {
   display: flex;
+  font-family: "Sacramento", cursive;
   margin: 5rem auto 0 auto;
   width: 70%;
   justify-content: center;
@@ -38,6 +39,7 @@
 .welcome-body p {
   font-size: 24px;
   text-align: center;
+  font-family: "Comic Neue", cursive;
   margin: auto 0 auto 0;
   padding-bottom: 1rem;
 }
@@ -165,6 +167,7 @@
 
   .welcome-section h2 {
     font-size: 38px;
+    
   }
 
   .welcome-body .welcome-cake {
