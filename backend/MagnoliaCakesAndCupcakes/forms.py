@@ -2,6 +2,8 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
+import os
 
 from MagnoliaCakesAndCupcakes.models import Quote
 
@@ -44,7 +46,8 @@ class NewUserForm(UserCreationForm):
 class MultipleFileInput(forms.ClearableFileInput):
     allow_multiple_selected = True
 
-
+'''
+#previous implementation of file upload 
 class MultipleFileField(forms.FileField):
     def __init__(self, *args, **kwargs):
         kwargs.setdefault("widget", MultipleFileInput())
@@ -64,8 +67,47 @@ class ContactForm(forms.Form):
     subject = forms.CharField(required=True)
     message = forms.CharField(widget=forms.Textarea, required=True)
     file = MultipleFileField(required=False)
+'''
 
+class MultipleFileField(forms.FileField):
+    def __init__(self, *args, **kwargs):
+        kwargs.setdefault("widget", MultipleFileInput())
+        super().__init__(*args, **kwargs)
 
+    def clean(self, data, initial=None):
+        single_file_clean = super().clean
+        if isinstance(data, (list, tuple)):
+            result = []
+            for d in data:
+                cleaned_file = single_file_clean(d, initial)
+                self.validate_file(cleaned_file)
+                result.append(cleaned_file)
+        else:
+            result = single_file_clean(data, initial)
+            self.validate_file(result)
+        return result
+
+    def validate_file(self, file):
+        if file:
+            # Define allowed file types
+            allowed_types = [
+                'image/jpeg', 'image/png', 
+                'text/plain', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/csv',
+                'application/pdf'
+            ]
+            allowed_extensions = ['.jpg', '.jpeg', '.png', '.txt', '.docx', '.csv', '.pdf']
+
+            file_extension = os.path.splitext(file.name)[1].lower()
+            if file.content_type not in allowed_types and file_extension not in allowed_extensions:
+                raise ValidationError('Invalid file type. Allowed types are: PNG, JPEG, JPG, TXT, DOCX, CSV, and PDF.')
+
+class ContactForm(forms.Form):
+    email = forms.EmailField(required=True)
+    subject = forms.CharField(required=True)
+    message = forms.CharField(widget=forms.Textarea, required=True)
+    file = MultipleFileField(required=False)
+
+# ... (keep other classes as they are)
 class FlavourServingsForm(forms.Form):
     title = forms.CharField(max_length=100)
     list = forms.Textarea()
