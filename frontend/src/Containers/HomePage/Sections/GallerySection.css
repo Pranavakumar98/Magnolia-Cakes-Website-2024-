@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+
 .gallery-section-wrapper {
   padding: 7rem 0 7rem;
-  /* background-color: rgb(240, 223, 205); */
   background-image: url("utils/bg-gold-watercolor.jpg");
 }
 
@@ -16,29 +18,43 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.gallery-section-wrapper .gallery-row .gallery-column {
-  flex: 50%;
-  max-width: 40%;
+.gallery-section-wrapper .gallery-column {
+  flex: 0 0 calc(33.33% - 2rem); /* Adjusts to fit 3 columns */
+  max-width: calc(33.33% - 2rem); /* Adjusts width for 3 columns */
   padding: 0;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.gallery-section-wrapper
-  .gallery-row
-  .gallery-column
-  .gallery-grid-item-wrapper:not(:first-child) {
+.gallery-section-wrapper .gallery-grid-item-wrapper:not(:first-child) {
   margin-top: 1rem;
+}
+
+.gallery-section-wrapper .gallery-subtext {
+  font-family: 'Comic Neue', cursive; /* Applying Comic Neue font */
+  font-size: 18px;
+  color: #333;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
   .gallery-section-wrapper .gallery-row {
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+  }
+
+  .gallery-section-wrapper .gallery-column {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
