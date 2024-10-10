@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware', 
+    # 'csp.middleware.CSPMiddleware',
 ]
 
 
@@ -205,6 +206,25 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 PASSWORD_RESET_TIMEOUT = 14400  # How long the verification link is valid for
 
+#secure cookies 
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+#XSS filter 
+SECURE_BROWSER_XSS_FILTER = True
+
+#Disable MIME type sniffing
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+#Xframe 
+X_FRAME_OPTIONS = 'DENY'
+
+# CSP Settings
+CSP_DEFAULT_SRC = ("'self'",)
+CSP_STYLE_SRC = ("'self'", "'unsafe-inline'")
+CSP_SCRIPT_SRC = ("'self'",)
+CSP_IMG_SRC = ("'self'", "https:", "data:")
+CSP_FONT_SRC = ("'self'", "https:", "data:")
 GS_BUCKET_NAME = config('GS_BUCKET_NAME')
 GS_PROJECT_ID = config('GS_PROJECT_ID')
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
