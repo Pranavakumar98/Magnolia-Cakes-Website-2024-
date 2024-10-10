@@ -22,7 +22,7 @@ const Header = ({ api, isAuth, setIsAuth }) => {
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 50) {
-      return setHeaderStyle("header");
+      return setHeaderStyle("header colored");
     } else if (window.scrollY > 53) {
       return setHeaderStyle("header colored");
     }
