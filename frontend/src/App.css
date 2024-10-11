@@ -1,5 +1,5 @@
 .watercolor-bg {
-  background-image: url("./utils/background-pink-watercolor.png");
+  background-image: url("./utils/purple-blue-watercolour-bg.jpeg");
   /* background-image: url("./utils/brown-gold-bg.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
@@ -22,7 +22,7 @@ button,
 input,
 label,
 li {
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
 }
 
 @media (prefers-reduced-motion: no-preference) {
