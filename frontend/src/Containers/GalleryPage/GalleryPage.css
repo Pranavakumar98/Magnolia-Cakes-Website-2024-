@@ -24,7 +24,7 @@
 
 .category {
   font-weight: bold;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 24px;
   background-color: transparent;
   border: none;
@@ -35,7 +35,7 @@
 
 .selected-category {
   font-weight: bold;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 24px;
   background-color: transparent;
   border: none;

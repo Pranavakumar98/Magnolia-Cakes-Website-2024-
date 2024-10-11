@@ -17,7 +17,7 @@
   text-align: center;
   color: #b76e79;
   font-weight: bold;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 64px;
   margin: 20px;
 }
@@ -140,7 +140,7 @@
   border-radius: 3px;
   text-align: center;
   transition: 0.5s;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
 }
 .button {
   display: block;
@@ -154,7 +154,7 @@
   border-radius: 3px;
   text-align: center;
   transition: 0.5s;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
 }
 
 .button:hover {

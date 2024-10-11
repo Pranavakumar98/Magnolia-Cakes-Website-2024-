@@ -26,7 +26,7 @@
   vertical-align: middle;
   position: relative;
   top: -1px;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: small;
 }
 
@@ -39,7 +39,7 @@
   background-color: white;
   border: none;
   text-decoration: underline;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: small;
 }
 
@@ -79,7 +79,7 @@
 .signup-header {
   margin-top: 50px;
   margin-bottom: 80px;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-weight: 600;
   font-size: xx-large;
 }
