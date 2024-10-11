@@ -37,29 +37,52 @@ const GallerySection = ({ api }) => {
       {categories.length <= 0 && <p>Loading...</p>}
       {categories.length > 0 && (
         <div className="gallery-row">
-          <div className="gallery-column">
-            {everyFirst(categories).map((category) => (
-              <GalleryGridItem
-                key={category.id}
-                src={category.picture}
-                alt={category.name}
-                title={category.name}
-                link={
-                  "/gallery/?category=" + getGalleryCategoryParam(category.name)
-                }
-              />
-            ))}
+          {/* Left Column */}
+          <div className="gallery-column left-column">
+            {everyFirst(categories).map((category, index) => {
+              let sizeClass = "medium-image"; // Default to medium size
+              if (index === 0) {
+                sizeClass = "large-image"; // First image is large
+              } else if (index === 1) {
+                sizeClass = "small-image"; // Second image is small
+              } 
+              return (
+                <GalleryGridItem
+                  key={category.id}
+                  src={category.picture}
+                  alt={category.name}
+                  title={
+                    <div className="line-text-container">
+                      <div className="text">{category.name}</div>
+                      <div className="circle"></div>
+                    </div>
+                  }
+                  link={
+                    "/gallery/?category=" + getGalleryCategoryParam(category.name)
+                  }
+                  className={sizeClass} /* Apply the size class */
+                />
+              );
+            })}
           </div>
-          <div className="gallery-column">
+  
+          {/* Right Column */}
+          <div className="gallery-column right-column">
             {everyNth(categories, 2).map((category) => (
               <GalleryGridItem
                 key={category.id}
                 src={category.picture}
                 alt={category.name}
-                title={category.name}
+                title={
+                  <div className="line-text-container">
+                    <div className="text">{category.name}</div>
+                    <div className="circle"></div>
+                  </div>
+                }
                 link={
                   "/gallery/?category=" + getGalleryCategoryParam(category.name)
                 }
+                className="right-image"
                 isOnRight={true}
               />
             ))}
@@ -68,6 +91,6 @@ const GallerySection = ({ api }) => {
       )}
     </div>
   );
-};
+};  
 
 export default GallerySection;
