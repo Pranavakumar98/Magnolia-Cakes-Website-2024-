@@ -5,8 +5,8 @@
 .carousel-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
-  padding: 3rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .intro-quote {
@@ -23,16 +23,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 80%;
 }
 
 .swiper {
   aspect-ratio: 19/20;
-  height: 835px;
-  width: auto;
-  /* max-width: 900px; */
-  margin: auto 0 0 0;
+  height: 580px; /* Shrink the height */
+  max-height: 450px; /* Adjust max-height to shrink further */
+  width: 20%; /* Shrink the width to 20% */
+  margin: 50px 50px 50px auto; /* Ensure the margin is appropriate */
   display: inline-block;
 }
+
 
 .swiper-pagination-bullet {
   background-color: white;
@@ -88,7 +90,7 @@
   box-shadow: 0px -1px 2px #ffc1dc;
 }
 
-@media (min-width: 2220px) {
+@media (min-width: 2800px) {
   .swiper {
     height: 951px;
     /* max-width: 1500px; */
@@ -178,8 +180,8 @@
   .intro-quote.mobile {
     display: block;
     width: 100%;
-    margin: 0;
-    padding: 2rem;
+    margin: 50px 50px 50px 50px;
+    
   }
 
   .quote-wrapper2 {
@@ -192,7 +194,10 @@
 
   .swiper {
     height: auto;
+    max-height: 1000px;
     width: 100%;
+    margin: 50px 50px 50px 50px; /* Ensure the margin is appropriate */
+    display: inline-block;
   }
 }
 

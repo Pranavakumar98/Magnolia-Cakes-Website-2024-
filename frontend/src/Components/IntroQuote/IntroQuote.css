@@ -1,33 +1,38 @@
 h1.business-name {
   font-family: "Sacramento", cursive;
-  font-size: 150px;
+  font-size: 90px;
   text-align: center;
   width: fit-content;
   white-space: nowrap;
+  
 }
 
 .quote-p-wrapper {
-  margin: 4rem 0;
+  margin: 0.4rem 0; /* Reduce margin to bring elements even closer */
 }
 
 .quote-p-wrapper .quote {
-  width: fit-content;
-  white-space: nowrap;
+  width: 80%;
+  white-space: pre-wrap;
   text-align: center;
-  font-size: 38px;
-  margin: 0 auto 0.5rem auto;
-  font-family: 'Caveat Brush', cursive;
+  font-size: 18px;
+  margin: -0.5rem auto; /* Negative margin to bring the text closer */
+  font-family: 'Comic Neue';
+  padding: 0.1rem; /* Minimal padding */
 }
 
 .cake-pop {
-  width: 130px;
+  width: 80px;
   height: auto;
   object-fit: cover;
+  padding: 0.1rem; /* Reduced padding */
+  margin-top: 1rem; /* Overlap the cake icon slightly with the quote */
 }
 
+/* Media queries - Adjust for different screen sizes */
 @media (min-width: 2220px) {
   h1.business-name {
-    font-size: 180px;
+    font-size: 150px;
   }
 
   .quote-p-wrapper .quote {
