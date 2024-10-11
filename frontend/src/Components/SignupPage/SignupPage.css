@@ -33,7 +33,7 @@
 }
 
 .terms-conditions-check .label {
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@
 }
 
 .signup-form .signup-question {
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 16px;
 }
 
@@ -87,7 +87,7 @@
   border: 2px solid #b76e79;
   border-radius: 3px;
   margin: 1rem 0 1rem;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
 }
 
 .success {
@@ -125,7 +125,7 @@
   }
 
   .signup-page .signup-question {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     font-size: 14px;
   }
 

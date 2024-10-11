@@ -20,7 +20,7 @@
   margin-top: 50px;
   margin-bottom: 80px;
 
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 48px;
   font-weight: bold;
 }
@@ -39,7 +39,7 @@
 
 .input-login::placeholder {
   color: black;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Comic Neue", cursive;
   text-align: left;
   transform: translateY(10px);
 }

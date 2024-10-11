@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     font-size: 50px;
 }
 
@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 .payment-details-table-container {
@@ -42,7 +42,7 @@
 .payment-details-table th {
     background-color: #f2f2f2;
     text-align: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 .payment-details-table tr {
@@ -53,7 +53,7 @@
 .payment-details-table .item-name,
 .payment-details-table .item-price {
     text-align: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 .payment-bottom {
@@ -79,7 +79,7 @@
 
 .amount-paid {
     margin-right: 8px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     background-color: rgb(240, 223, 205); /* Set background color */
     padding: 10px;
     border: 1px solid #ccc;
@@ -87,7 +87,7 @@
 }
 
 .amount-paid-value {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     background-color: rgb(240, 223, 205); /* Set background color */
     padding: 10px;
     /* border: 1px solid #ccc; */

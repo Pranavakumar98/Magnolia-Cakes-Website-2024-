@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     font-size: 50px;
 }
 
@@ -33,17 +33,17 @@
 }
 
 .profile-welcome {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     font-size: 25px;
 }
 
 .profile-info {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     margin-top: 20px;
 }
 
 .profile-title {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -98,13 +98,13 @@
 .error-profile {
     background-color: lightcoral;
     color: white;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 .success-profile {
     background-color: rgb(190, 255, 190);
     color: black;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 .msgs-profile {
