@@ -17,6 +17,7 @@ nav ul {
 nav ul li {
   list-style: none;
   font-size: 18px;
+  letter-spacing: -1px;
   margin: auto 0 auto;
 }
 
