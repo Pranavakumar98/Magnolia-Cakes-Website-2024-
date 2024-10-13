@@ -13,6 +13,7 @@ const WelcomeSection = ({ api }) => {
     api
       .get("/api/homepage-welcome/")
       .then((response) => {
+        // Set the retrieved content in the state
         const responseData = response.data;
         setContent({
           heading: responseData.heading,
@@ -28,17 +29,24 @@ const WelcomeSection = ({ api }) => {
   return (
     <div className="welcome-section">
       <h2>{content.heading}</h2>
+      {content.image && (
+          <img
+            className="mixer-img"
+            src={content.image}
+            alt="mixer img"
+          />
+        )}
       <div className="welcome-body">
         <div className="body-content">
-          {content.paragraph.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          {content.paragraph.map((paragraph) => (
+            <p>{paragraph}</p>
           ))}
         </div>
         {content.image && (
           <img
             className="welcome-cake"
             src={content.image}
-            alt="Decorative Cake"
+            alt="welcome cake"
           />
         )}
       </div>
