@@ -12,9 +12,10 @@
   left: 5; /* Aligns the image to the left */
   width: 300px; /* Adjust the size of the image */
   height: auto;
-  margin: 10px; /* Adds a bit of space from the top and left edge */
+  margin: 30px; /* Adds a bit of space from the top and left edge */
   padding: 2rem 2rem 2rem 2rem;
   z-index: 10; /* Ensures the image stays above other elements */
+  
 }
 .welcome-section h2 {
   display: block;
@@ -84,246 +85,62 @@
   margin: auto 0 auto 0;
 }
 
-@media (max-width: 1895px) {
-  .welcome-body .welcome-cake {
-    width: 40%;
-  }
-}
-
-@media (max-width: 1440px) {
-
-  .welcome-section {
-    padding: 10rem 0 10rem;
-    /* background-color: white; */
+@media screen and (max-width: 768px) {
+   .welcome-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: auto; /* Let the height adjust to content */
+    padding: 2rem 0; /* Adjust padding for better spacing */
+  }
+
+  .mixer-img {
+    width: 30%; /* Reduce width as per your adjustment */
+    margin: 0; /* Reset margin */
+    padding: 0;
+    position: static; /* Reset positioning */
   }
 
   .welcome-section h2 {
-    width: 75%;
-    display: block;
-  text-align: center;
-  font-family: "Sacramento", cursive;
-  /* font-family: "Courgette", cursive; */
- 
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+    width: 90%; /* Make heading responsive */
+    font-size: 40px; /* Adjust font size */
+    margin: 1rem auto;
   }
 
   .welcome-body {
-    display: flex;
-    margin: 5rem auto 0 auto;
-    width: 70%;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
     align-items: center;
+    bottom: unset;
+    width: 100%;
+    padding: 0;
   }
-  
+
   .welcome-body .body-content {
-    display: flex;
-    flex-direction: column;
-    margin: auto 0 auto 0;
-    width: 40%;
-    height: 100%;
-    width: fit-content;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 1rem auto;
   }
 
   .welcome-body p {
-    font-size: 24px;
-  text-align: center;
-  margin: auto 0 auto 0;
-  padding-bottom: 1rem;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 0;
+    margin: 2rem auto;
   }
 
-  .welcome-body .welcome-cake {
-  width: 25%;
-  height: 100%;
-  margin-left: 3rem;
-  object-fit: contain;
-}
-
-.magnolia-flower {
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-  margin: 5rem auto;
-}
-
-.quote-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 0 auto;
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-}
-}
-
-@media (max-width: 1024px) {
- 
-  .welcome-section {
-    padding: 10rem 0 10rem;
-    /* background-color: white; */
-    display: flex;
-    flex-direction: column;
+  .welcome-body img.welcome-cake {
+    width: 80%;
+    margin: 1rem auto;
+    padding-right: 0;
   }
 
-  .welcome-section h2 {
-    width: 75%;
-    display: block;
-  text-align: center;
-  font-family: "Sacramento", cursive;
-  /* font-family: "Courgette", cursive; */
- 
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+  .quote-wrapper {
+    width: 90%;
+    margin: 1rem auto;
   }
 
-  .welcome-body {
-    display: flex;
-    margin: 5rem auto 0 auto;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .welcome-body .body-content {
-    display: flex;
-    flex-direction: column;
-    margin: auto 0 auto 0;
-    width: 40%;
-    height: 100%;
-    width: fit-content;
-  }
-
-  .welcome-body p {
-    font-size: 24px;
-  text-align: center;
-  margin: auto 0 auto 0;
-  padding-bottom: 1rem;
-  }
-
-  .welcome-body .welcome-cake {
-  width: 25%;
-  height: 100%;
-  margin-left: 3rem;
-  object-fit: contain;
-}
-
-.magnolia-flower {
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-  margin: 5rem auto;
-}
-
-.quote-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 0 auto;
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-}
-}
-
-@media (max-width: 768px) {
-  
-  .welcome-section {
-    padding: 10rem 0 10rem;
-    /* background-color: white; */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .welcome-section h2 {
-    width: 75%;
-    display: block;
-  text-align: center;
-  font-family: "Sacramento", cursive;
-  /* font-family: "Courgette", cursive; */
- 
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
-  }
-
-  .welcome-body {
-    display: flex;
-    margin: 5rem auto 0 auto;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .welcome-body .body-content {
-    display: flex;
-    flex-direction: column;
-    margin: auto 0 auto 0;
-    width: 40%;
-    height: 100%;
-    width: fit-content;
-  }
-
-  .welcome-body p {
-    font-size: 8px;
-  text-align: center;
-  margin: auto 0 auto 0;
-  padding-bottom: 1rem;
-  }
-
-  .welcome-body .welcome-cake {
-  width: 25%;
-  height: 100%;
-  margin-left: 3rem;
-  object-fit: contain;
-}
-
-.magnolia-flower {
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-  margin: 5rem auto;
-}
-
-.quote-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 0 auto;
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-}
-}
-
-@media (max-width: 480px) {
-  .welcome-section {
-    padding: 3rem 0 3rem;
-  }
-
-
-  .welcome-section h2 {
-    font-size: 38px;
-    display: block;
-  text-align: center;
-  font-family: "Sacramento", cursive;
-  /* font-family: "Courgette", cursive; */
- 
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
-  }
-
-  .welcome-body .welcome-cake {
-    width: 75%;
-  }
-
-  .welcome-body p {
-    font-size: 5px;
-  }
-
-  .body-paragaph {
-    width: 75%;
+  .quote-wrapper .welcome-quote {
+    font-size: 18px;
   }
 }

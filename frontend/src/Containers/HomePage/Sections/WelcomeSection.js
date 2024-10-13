@@ -32,7 +32,7 @@ const WelcomeSection = ({ api }) => {
       {content.image && (
           <img
             className="mixer-img"
-            src={content.image}
+            src={"/images/mixer-nobg.png"}
             alt="mixer img"
           />
         )}
