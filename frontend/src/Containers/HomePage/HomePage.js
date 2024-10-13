@@ -10,6 +10,7 @@ import WelcomeSection from "./Sections/WelcomeSection";
 import WelcomePopup from "Components/WelcomePopup/WelcomePopup";
 import { parseStringToParagraphsByNewline } from "utils/parseStringsToArray";
 import CupcakesBanner from "Components/CupcakesBanner/CupcakesBanner";
+import BadgesSection from "./Sections/BadgesSection";
 
 const HomePage = ({ api }) => {
   const { user } = useContext(AuthContext);
@@ -84,6 +85,7 @@ const HomePage = ({ api }) => {
       <CupcakesBanner api={api} />
       <WelcomeSection api={api} />
       <GallerySection api={api} />
+      <BadgesSection/>
       <AboutUsSection api={api} />
       <DeliverySection />
       <LocationPage api={api} />
