@@ -1,0 +1,30 @@
+.badges-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f7e8f0; /* Placeholder background color */
+    border-radius: 15px;
+  }
+  
+  .badge-item {
+    text-align: center;
+    width: 20%;
+  }
+  
+  .badge-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .badge-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #8a4d76; /* Adjust to match your theme */
+  }
+  
+  .badge-item p {
+    font-size: 1rem;
+    color: #6b6b6b;
+  }
+  
