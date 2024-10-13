@@ -62,6 +62,10 @@ class MagnoliaCakesAndCupcakesView(viewsets.ModelViewSet):
     # with the Todo list objects
     queryset = MagnoliaCakesAndCupcakes.objects.all()
 
+class ReviewListCreate(generics.ListCreateAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+
 ############### Authentication view ###############
 @api_view(["POST"])
 @permission_classes(
