@@ -1,9 +1,11 @@
 .badges-section {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    background-color: #f7e8f0; /* Placeholder background color */
+    padding: 5rem 3rem; /* Increased padding to make the section taller */
+    background-color: #F3D4E4; /* Updated background color */
     border-radius: 15px;
+    margin: 2rem auto;
+    width: 90%;
   }
   
   .badge-item {
@@ -12,19 +14,45 @@
   }
   
   .badge-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
   }
   
   .badge-item h3 {
     font-size: 1.5rem;
-    margin: 0.5rem 0;
-    color: #8a4d76; /* Adjust to match your theme */
+    margin: 0.3rem 0;
+    color: #8a4d76;
   }
   
   .badge-item p {
     font-size: 1rem;
     color: #6b6b6b;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .badges-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 3rem; /* Keep the padding smaller on smaller screens */
+    }
+  
+    .badge-item {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  
+    .badge-icon {
+      width: 100px;
+    }
+  
+    .badge-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .badge-item p {
+      font-size: 1rem;
+    }
   }
   
