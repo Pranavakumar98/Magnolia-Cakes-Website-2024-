@@ -30,6 +30,14 @@ class MagnoliaCakesAndCupcakes(models.Model):
     def __str__(self):
         # it will return the title
         return self.title
+    
+class Review(models.Model):
+    customer_name = models.CharField(max_length=100)
+    stars = models.IntegerField()
+    description = models.TextField()
+
+    def __str__(self):
+        return self.customer_name
 
 
 class TermsAndCondition(models.Model):

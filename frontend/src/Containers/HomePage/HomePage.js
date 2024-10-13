@@ -11,6 +11,7 @@ import WelcomePopup from "Components/WelcomePopup/WelcomePopup";
 import { parseStringToParagraphsByNewline } from "utils/parseStringsToArray";
 import CupcakesBanner from "Components/CupcakesBanner/CupcakesBanner";
 import BadgesSection from "./Sections/BadgesSection";
+import ReviewSection from "./Sections/ReviewSection";
 
 const HomePage = ({ api }) => {
   const { user } = useContext(AuthContext);
@@ -87,6 +88,7 @@ const HomePage = ({ api }) => {
       <GallerySection api={api} />
       <BadgesSection/>
       <AboutUsSection api={api} />
+      <ReviewSection />
       <DeliverySection />
       <LocationPage api={api} />
     </>

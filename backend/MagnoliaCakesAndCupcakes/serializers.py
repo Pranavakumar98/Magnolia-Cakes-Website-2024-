@@ -54,6 +54,10 @@ class FlavoursAndServingsSerializer(serializers.ModelSerializer):
         model = FlavoursAndServings
         fields = "__all__"
 
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = ['customer_name', 'stars', 'description']
 
 class FlavoursAndServingsInfoSerializer(serializers.ModelSerializer):
     class Meta:

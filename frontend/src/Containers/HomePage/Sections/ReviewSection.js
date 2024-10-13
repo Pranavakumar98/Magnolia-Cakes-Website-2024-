@@ -24,6 +24,16 @@ const ReviewSection = () => {
         stars: 5,
         description: 'Beautifully made custom cake and great customer service. So glad with my order, tasted so fresh and will definitely come back again! Highly recommended'
     }
+
+//for django api
+//     const [reviews, setReviews] = useState([]);
+
+//   useEffect(() => {
+//     fetch('/api/reviews')  // Fetch from Django API
+//       .then(response => response.json())
+//       .then(data => setReviews(data));
+//   }, []);
+
   ];
 
   return (
