@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   height: 100vh; /* Full viewport height */
-  padding: 10rem 0;
+  padding: 7rem 0;
   position: relative;
 }
 
 .mixer-img {
   position: absolute;
-  top: 5; /* Aligns the image to the top */
+  top: 0; /* Aligns the image to the top */
   left: 5; /* Aligns the image to the left */
-  width: 300px; /* Adjust the size of the image */
+  width: 350px; /* Adjust the size of the image */
   height: auto;
   margin: 30px; /* Adds a bit of space from the top and left edge */
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
   z-index: 10; /* Ensures the image stays above other elements */
   
 }
@@ -21,7 +21,7 @@
   display: block;
   text-align: center;
   font-family: "Sacramento", cursive;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
@@ -52,11 +52,12 @@
   width: 110%; /* Ensure the text takes up half the width */
   padding-left: 5rem; /* Adds space between the text and the image */
   margin: 5rem 5 5 5;
+  font-weight: bold;
 }
 
 .welcome-body img.welcome-cake {
-  width: 50%; /* Image takes up 40% of the width */
-  height: auto;
+  width: fit-content(100%); /* Image takes up 40% of the width */
+  height: 600px;
   object-fit: contain;
   margin-left: 2rem; /* Adds space between the text and the image */
   margin-right: 0; /* Ensures no margin on the right */
@@ -84,6 +85,43 @@
   font-size: 24px;
   margin: auto 0 auto 0;
 }
+
+
+@media screen and (max-width: 1600px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 80px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 550px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 24px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  
+}
+
 
 @media screen and (max-width: 768px) {
    .welcome-section {
