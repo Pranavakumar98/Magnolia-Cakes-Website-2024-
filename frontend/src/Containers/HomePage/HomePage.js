@@ -13,6 +13,7 @@ import CupcakesBanner from "Components/CupcakesBanner/CupcakesBanner";
 import BadgesSection from "./Sections/BadgesSection";
 import ReviewSection from "./Sections/ReviewSection";
 
+
 const HomePage = ({ api }) => {
   const { user } = useContext(AuthContext);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
@@ -90,7 +91,8 @@ const HomePage = ({ api }) => {
       <AboutUsSection api={api} />
       <ReviewSection />
       <DeliverySection />
-      <LocationPage api={api} />
+      {/* <LocationPage api={api} /> */}
+      {/* <FooterSection api={api}/> */}
     </>
   );
 };

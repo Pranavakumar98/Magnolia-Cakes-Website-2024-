@@ -1,0 +1,105 @@
+/* Apply the font to the entire footer */
+.footer-container {
+    background-color: #F3D4E4;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;  /* Applied Comic Neue to all text */
+    color: #333;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+  }
+  
+  .footer-column {
+    text-align: left;
+    min-width: 150px;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;  /* Make all headings bold */
+  }
+  
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-column ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-medias {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-media-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .social-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;  /* Make all text in footer-bottom bold */
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  
+  .footer-map {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  .footer-container iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+  }
+  .business-hours p {
+    margin: 2px 0;  /* Adjusts the top and bottom margin */
+    line-height: 1.2;  /* Adjusts the space between lines */
+  }
+  
