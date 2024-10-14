@@ -82,7 +82,7 @@ const FooterSection = ({ api }) => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>{contactInfo.section_heading}</h4>
+          <h4>Contact Us</h4>
           <ul>
             <li><a href="https://magnoliacake.com.au/contact-us" target="_blank" rel="noopener noreferrer">Contact us</a></li>
             <li><a href="https://magnoliacake.com.au/get-a-quote" target="_blank" rel="noopener noreferrer">Get a quote</a></li>
@@ -90,8 +90,8 @@ const FooterSection = ({ api }) => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>{location.section_heading}</h4>
-          <p>{location.location_address}</p>
+          <h4>Our Location</h4>
+          <p>Melbourne, VIC 3752</p>
         </div>
         <div className="footer-column">
           <h4>Follow us:</h4>
@@ -113,18 +113,17 @@ const FooterSection = ({ api }) => {
               <p key={index}>{info}</p>
             ))}
           </div>
-          <ShopMap /> {/* Restored ShopMap component */}
         </div>
       </div>
       <div className="footer-bottom">
-        <p>
-          Email: contact@magnoliacake.com.au &nbsp;&nbsp;
-          Phone: 0422-733-882 &nbsp;&nbsp;
-          <a href="https://magnoliacake.com.au/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and conditions</a> &nbsp;&nbsp;
-          ABN 50910846907
-        </p>
-        <p>Copyright © 2024 Magnolia Cakes and Cupcakes</p>
+        <p>Email: contact@magnoliacake.com.au &nbsp;&nbsp; Phone: 0422-733-882 &nbsp;&nbsp; <a href="https://magnoliacake.com.au/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and conditions</a> &nbsp;&nbsp; ABN 50910846907</p>
+        
       </div>
+      <div className="footer-map">
+      <p>Copyright © 2024 Magnolia Cakes and Cupcakes</p>
+        <ShopMap />
+      </div>
+      
     </footer>
   );
 };
