@@ -51,12 +51,7 @@ const LocationPage = ({ api }) => {
         </div>
         <ShopMap />
       </div>
-      <BarLoader
-        loading={loading}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-        width={"100%"}
-      />
+      
     </>
   );
 };

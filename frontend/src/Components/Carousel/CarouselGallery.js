@@ -50,12 +50,7 @@ const CarouselGallery = ({ quote, images, loading }) => {
           ))}
         </Swiper>
 
-        <BarLoader
-          loading={loading}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-          width={"100%"}
-        />
+        
 
         <div className="intro-quote desktop">
           <IntroQuote quote={quote} />
