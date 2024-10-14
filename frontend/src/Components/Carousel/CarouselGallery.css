@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 1795px) {
+@media (max-width: 1600px) {
   .swiper {
     height: 678px;
   }
@@ -115,23 +115,18 @@
   .carousel-wrapper {
     gap: 2rem;
   }
-}
 
-@media (max-width: 1565px) {
   .swiper {
-    height: 535px;
-    /* max-width: 1000px; */
-  }
-
-  .carousel-wrapper {
-    gap: 1rem;
-    padding: 2rem;
-  }
-
-  .intro-quote {
-    margin: auto 1rem;
+    aspect-ratio: 19/20;
+    height: 400px; /* Shrink the height */
+    max-height: 450px; /* Adjust max-height to shrink further */
+    width: 30%; /* Shrink the width to 20% */
+    margin: 50px 50px 50px auto; /* Ensure the margin is appropriate */
+    display: inline-block;
   }
 }
+
+
 
 @media (max-width: 1400px) {
   .swiper {

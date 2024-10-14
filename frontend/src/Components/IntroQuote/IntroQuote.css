@@ -56,33 +56,21 @@ h1.business-name {
   }
 }
 
-@media (max-width: 1795px) {
+@media (max-width: 1600px) {
   h1.business-name {
-    font-size: 110px;
+    font-size: 100px;
   }
 
   .quote-p-wrapper .quote {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 1565px) {
-  h1.business-name {
-    font-size: 96px;
-  }
-
-  .quote-p-wrapper {
-    margin: 2rem 0 1.5rem;
-  }
-
-  .quote-p-wrapper .quote {
-    font-size: 26px;
+    font-size: 14px;
   }
 
   .cake-pop {
-    width: 90px;
+    width: 60px;
   }
 }
+
+
 
 @media (max-width: 1400px) {
   h1.business-name {
@@ -98,7 +86,7 @@ h1.business-name {
   }
 
   .cake-pop {
-    width: 70px;
+    width: 40px;
   }
 }
 
