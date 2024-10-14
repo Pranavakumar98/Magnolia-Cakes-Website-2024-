@@ -1,6 +1,5 @@
 import React from "react";
 import { goldCircledLineLeft, goldCircledLineRight } from "utils/gallery-lines";
-
 import "./GalleryGridItem.css";
 
 const GalleryGridItem = (props) => {
@@ -9,6 +8,9 @@ const GalleryGridItem = (props) => {
   const wrapperStyling = isOnRight
     ? "gallery-grid-item-wrapper row-reverse"
     : "gallery-grid-item-wrapper";
+
+  // Add a condition to check for goldCircledLineLeft and apply a special class
+  const additionalClass = !isOnRight ? " gold-left" : "";
 
   const getGalleryLinesDirection = () => {
     if (!isOnRight) {
@@ -35,7 +37,7 @@ const GalleryGridItem = (props) => {
   };
 
   return (
-    <div className={wrapperStyling}>
+    <div className={wrapperStyling + additionalClass}>
       <h4>{title}</h4>
       {getGalleryLinesDirection()}
       <a href={link}>

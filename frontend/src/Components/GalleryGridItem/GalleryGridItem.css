@@ -34,8 +34,8 @@
 }
 
 .gallery-grid-item-wrapper a {
-  min-width: 40%;
-  width: 40%;
+  min-width: 20%;
+  width: 20%;
   z-index: 1;
 }
 
@@ -73,13 +73,22 @@
 
 .gallery-grid-item-wrapper a .img-wrapper img.gallery-img {
   width: 100%;
+  height: 90%;
+  
 }
+
+/* Reducing image height for images with goldCircledLineLeft */
+.gallery-grid-item-wrapper.gold-left .img-wrapper img.gallery-img {
+  height: 60%;
+  object-fit: cover;
+}
+
 
 .gallery-grid-item-wrapper.row-reverse {
   flex-direction: row-reverse;
   justify-content: left;
   margin-left: 0;
-  margin-right: 2rem;
+  margin-right: 0rem;
 }
 
 .gallery-grid-item-wrapper.row-reverse h4 {
