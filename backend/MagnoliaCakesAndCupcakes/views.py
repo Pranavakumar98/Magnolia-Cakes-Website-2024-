@@ -3,8 +3,11 @@ from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login as django_login
 from django.contrib.auth.forms import AuthenticationForm
 
+
+
 # import view sets from the REST framework
 from rest_framework import viewsets
+from rest_framework import generics
 
 # import the TodoSerializer from the serializer file
 from .serializers import *
