@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer/Footer";
+import FooterSection from "./Footer/FooterSection";
 import Header from "./Header/Header";
 import ScrollToTop from "Components/ScrollToTop/ScrollToTop";
 import "./PageLayout.css";
@@ -16,7 +16,7 @@ const PageLayout = (props) => {
       />
       {props.children}
       <ScrollToTop />
-      <Footer api={api} />
+      <FooterSection api={api} />
     </div>
   );
 };
