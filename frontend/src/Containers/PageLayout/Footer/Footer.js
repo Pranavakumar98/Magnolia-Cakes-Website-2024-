@@ -88,23 +88,13 @@ const Footer = ({ api }) => {
         <FooterSection headerText={location.section_heading}>
           <p>{location.location_address}</p>
           <Link to={PAGELINKS.LOCATION_LINK}>Click here to view map</Link>
-          <BarLoader
-            loading={loadingLocation}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-            width={"100%"}
-          />
+          
         </FooterSection>
         <FooterSection headerText={contact.section_heading}>
           {parseLineSeperatedString(contact.contact_us_info).map((info) => (
             <p key={contact.contact_us_info.indexOf(info)}>{info}</p>
           ))}
-          <BarLoader
-            loading={loadingContactUs}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-            width={"100%"}
-          />
+          
         </FooterSection>
         <FooterSection headerText={FOOTERSECTIONS.FOLLOW_US}>
           <div className="social-medias">
@@ -117,12 +107,7 @@ const Footer = ({ api }) => {
               />
             ))}
           </div>
-          <BarLoader
-            loading={loadingSocialMedia}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-            width={"100%"}
-          />
+          
         </FooterSection>
       </div>
       <hr></hr>
@@ -133,12 +118,7 @@ const Footer = ({ api }) => {
               <p key={businessHrs.indexOf(info)}>{info}</p>
             ))}
           </div>
-          <BarLoader
-            loading={loadingBusinessHrs}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-            width={"100%"}
-          />
+          
         </FooterSection>
         <FooterSection>
           <Link to={PAGELINKS.TERMS_AND_CONDITIONS_LINK}>
