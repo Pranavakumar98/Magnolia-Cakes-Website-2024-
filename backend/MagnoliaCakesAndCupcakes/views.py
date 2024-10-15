@@ -65,9 +65,6 @@ class MagnoliaCakesAndCupcakesView(viewsets.ModelViewSet):
     # with the Todo list objects
     queryset = MagnoliaCakesAndCupcakes.objects.all()
 
-class ReviewListCreate(generics.ListCreateAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
 
 ############### Authentication view ###############
 @api_view(["POST"])
@@ -452,6 +449,23 @@ def faq_categories_list(request):
         categories = FAQCategory.objects.all()
         serializer = CategorySerializer(categories, many=True)
         return Response(serializer.data)
+
+@api_view(["GET", "POST"])
+@permission_classes([AllowAny])  # Assuming you want anyone to be able to access this
+def reviews_list_create(request):
+    """Handle GET and POST requests for reviews"""
+    
+    if request.method == "GET":
+        reviews = Review.objects.all()  # Fetch all reviews
+        serializer = ReviewSerializer(reviews, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    if request.method == "POST":
+        serializer = ReviewSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()  # Save the new review to the database
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(["GET"])
 @permission_classes(

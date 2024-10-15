@@ -40,6 +40,7 @@ urlpatterns = [
         views.terms_and_conditions,
         name="terms-and-conditions",
     ),
+    path("api/reviews/", views.reviews_list_create, name="reviews-list-create"),
     path("api/login/", views.login, name="api-login"),
     path("api/user/", views.get_user, name="get-user"),
     path("api/logout/", views.LogoutView.as_view(), name="logout"),
