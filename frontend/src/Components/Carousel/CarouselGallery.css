@@ -121,7 +121,7 @@
     height: 400px; /* Shrink the height */
     max-height: 450px; /* Adjust max-height to shrink further */
     width: 30%; /* Shrink the width to 20% */
-    margin: 50px 50px 50px auto; /* Ensure the margin is appropriate */
+    margin: 60px 50px 60px 60px; /* Ensure the margin is appropriate */
     display: inline-block;
   }
 }

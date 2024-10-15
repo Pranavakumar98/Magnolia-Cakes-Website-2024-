@@ -12,14 +12,14 @@ h1.business-name {
 }
 
 .quote-p-wrapper .quote {
-  width: 80%;
+  width: 90%;
   white-space: pre-wrap;
   text-align: center;
   font-size: 18px;
   margin: -0.5rem auto; /* Negative margin to bring the text closer */
   font-family: 'Comic Neue', cursive;
   font-weight: lighter;
-  padding: 0.1rem; /* Minimal padding */
+  padding: 1rem; /* Minimal padding */
 }
 
 .cake-pop {
@@ -62,11 +62,11 @@ h1.business-name {
   }
 
   .quote-p-wrapper .quote {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .cake-pop {
-    width: 60px;
+    width: 80px;
   }
 }
 
