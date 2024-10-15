@@ -89,7 +89,7 @@ const HomePage = ({ api }) => {
       <GallerySection api={api} />
       <BadgesSection/>
       <AboutUsSection api={api} />
-      <ReviewSection />
+      <ReviewSection api={api}/>
       <DeliverySection />
       {/* <LocationPage api={api} /> */}
       {/* <FooterSection api={api}/> */}
