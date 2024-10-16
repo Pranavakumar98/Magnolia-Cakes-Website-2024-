@@ -59,14 +59,16 @@ h1.business-name {
 @media (max-width: 1600px) {
   h1.business-name {
     font-size: 100px;
+    padding-top: 1rem;
   }
 
   .quote-p-wrapper .quote {
-    font-size: 18px;
+    font-size: 21px;
+    width: 100%;
   }
 
   .cake-pop {
-    width: 80px;
+    width: 85px;
   }
 }
 
