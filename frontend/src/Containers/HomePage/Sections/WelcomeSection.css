@@ -232,31 +232,43 @@
     display: block;
     text-align: center;
     font-family: "Sacramento", cursive;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    font-size: 70px;
+    font-size: 65px;
+    
   }
 
 
   .welcome-body img.welcome-cake {
-    width: fit-content(100%); /* Image takes up 40% of the width */
-    height: 450px;
-    object-fit: contain;
+    width: 820px; /* Image takes up 40% of the width */
+    height: 400px;
+    
+    object-fit: fill;
     margin-left: 2rem; /* Adds space between the text and the image */
     margin-right: 0; /* Ensures no margin on the right */
     padding-right: 0; /* Remove any padding on the right */
+    
   }
 
   .welcome-body p {
-    font-size: 24px;
+    font-size: 21px;
     text-align: center;
     white-space: pre-wrap;
     width: 100%; /* Ensure the text takes up half the width */
-    padding-left: 5rem; /* Adds space between the text and the image */
+    padding-left: 8rem; /* Adds space between the text and the image */
     margin: 5rem 5 5 5;
     font-weight: bold;
+  
+  }
+
+  .mixer-img {
+    
+    
+    width: 300px; /* Adjust the size of the image */
+    height: auto;
+    
   }
   
 }
@@ -350,17 +362,17 @@
     display: block;
     text-align: center;
     font-family: "Sacramento", cursive;
-    width: 50%;
+    width: 38%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    font-size: 60px;
+    font-size: 50px;
   }
 
 
   .welcome-body img.welcome-cake {
     width: fit-content(100%); /* Image takes up 40% of the width */
-    height: 400px;
+    height: 320px;
     object-fit: contain;
     margin-left: 2rem; /* Adds space between the text and the image */
     margin-right: 0; /* Ensures no margin on the right */
@@ -391,17 +403,17 @@
     display: block;
     text-align: center;
     font-family: "Sacramento", cursive;
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    font-size: 60px;
+    font-size: 50px;
   }
 
 
   .welcome-body img.welcome-cake {
     width: fit-content(100%); /* Image takes up 40% of the width */
-    height: 400px;
+    height: 350px;
     object-fit: contain;
     margin-left: 2rem; /* Adds space between the text and the image */
     margin-right: 0; /* Ensures no margin on the right */
@@ -409,7 +421,7 @@
   }
 
   .welcome-body p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     white-space: pre-wrap;
     width: 100%; /* Ensure the text takes up half the width */
