@@ -15,7 +15,7 @@
 .reviews-wrapper {
   display: flex;
   width: max-content; /* Ensure it accommodates all the reviews */
-  animation: scroll 30s linear infinite; /* Continuous scrolling animation */
+  animation: scroll 60s linear infinite; /* Continuous scrolling animation */
 }
 
 .review-card {
@@ -23,9 +23,12 @@
   border-radius: 10px;
   padding: 15px;
   margin-right: 20px; /* Adjust horizontal space between reviews */
-  width: 20%; /* Adjust width as needed */
+  width: 500px; /* Adjust width as needed */
+  max-width: 500px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0; /* Prevent the review card from shrinking */
+  font: 'Comic Neue', sans-serif;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .name-and-stars {
@@ -45,9 +48,10 @@
 }
 
 .review-description {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #000000;
   line-height: 1.5;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 /* Keyframes for continuous horizontal scrolling */
@@ -85,7 +89,7 @@
   
   .review-description {
     font-size: 0.85rem;
-    color: #555;
+    color: #000000;
     line-height: 1.5;
   }
 }
