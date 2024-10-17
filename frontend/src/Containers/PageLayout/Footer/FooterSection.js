@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './FooterSection.css';
-import ShopMap from "Components/ShopMap/ShopMap";
+
 
 // SocialMediaLink component to handle individual social media links with images
 const SocialMediaLink = ({ socialMedia, account_name, account_link }) => {
@@ -121,7 +121,7 @@ const FooterSection = ({ api }) => {
       </div>
       <div className="footer-map">
       <p>Copyright © 2024 Magnolia Cakes and Cupcakes</p>
-        <ShopMap />
+        
       </div>
       
     </footer>
