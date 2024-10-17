@@ -89,20 +89,12 @@
 }
 
 .footer-bottom p {
-  margin: 5px 0;
+  margin: 3px 0;
   flex-grow: 1; /* Text takes the remaining space */
 }
 
 /* Ensure map stays on the right */
-.footer-map {
-  width: auto;  /* Increased width */
-  height: 250px; /* Increased height */
-  border-radius: 10px;
-  
-  /* Position map on the right */
-  flex-shrink: 0; /* Prevent map from shrinking */
-  margin-left: auto; /* Push the map to the right */
-}
+
 
 .footer-map iframe {
   width: 100%;
