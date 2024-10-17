@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.core.files.storage import default_storage
 from django.contrib.auth.models import User
+from django.core.validators import MaxLengthValidator, MinValueValidator, MaxValueValidator
+
 
 from django.utils.text import slugify
 
@@ -32,9 +34,9 @@ class MagnoliaCakesAndCupcakes(models.Model):
         return self.title
     
 class Review(models.Model):
-    customer_name = models.CharField(max_length=100)
-    stars = models.IntegerField()
-    description = models.TextField()
+    customer_name = models.CharField(max_length=15)
+    stars = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
+    description = models.TextField(max_length=700)
 
     def __str__(self):
         return self.customer_name
