@@ -121,10 +121,5 @@
       text-align: center;
   }
 
-  .footer-map {
-      position: static;
-      margin: 0 auto;
-      width: 100%;
-      height: 250px; /* Adjust for smaller screens */
-  }
+ 
 }
