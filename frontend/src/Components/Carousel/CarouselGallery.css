@@ -209,8 +209,12 @@
     padding: 2rem;
   }
 
-  .quote-wrapper2 {
-    margin: 0 1.5rem 0 1.5rem;
+  .swiper {
+    height: auto;
+    max-height: 1000px;
+    width: 100%;
+    margin: 50px 50px 50px 50px; /* Ensure the margin is appropriate */
+    display: inline-block;
   }
 
   .quote-wrapper2 .quote {
