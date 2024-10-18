@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden; /* Prevents any overflow caused by the entire body */
+}
+
 .pink-bg {
   background-color: #ffc1dc;
 }
@@ -16,6 +20,7 @@
 
 .intro-quote.mobile {
   display: none;
+  overflow-x: hidden;
 }
 
 .quote-wrapper2 {
@@ -159,6 +164,15 @@
   .swiper {
     height: 423px;
   }
+
+  .intro-quote.mobile {
+    display: block;
+    width: 100%;
+    margin: 50px 50px 50px 50px;
+    overflow-x: hidden;
+    overflow: hidden;
+    
+  }
 }
 
 @media (max-width: 890px) {
@@ -176,6 +190,8 @@
     display: block;
     width: 100%;
     margin: 50px 50px 50px 50px;
+    overflow-x: hidden;
+    overflow: hidden;
     
   }
 
@@ -213,8 +229,16 @@
     height: auto;
     max-height: 1000px;
     width: 100%;
-    margin: 50px 50px 50px 50px; /* Ensure the margin is appropriate */
+    margin: 20px 20px 20px 50px; /* Ensure the margin is appropriate */
     display: inline-block;
+  }
+  .intro-quote.mobile {
+    display: block;
+    width: 100%;
+    margin: 50px 50px 50px 50px;
+    overflow-x: hidden;
+    overflow: hidden;
+    
   }
 
   .quote-wrapper2 .quote {
