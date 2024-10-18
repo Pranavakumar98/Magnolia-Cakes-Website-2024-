@@ -15,7 +15,7 @@
 .reviews-wrapper {
   display: flex;
   width: max-content; /* Ensure it accommodates all the reviews */
-  animation: scroll 60s linear infinite; /* Continuous scrolling animation */
+  animation: scroll 120s linear infinite; /* Continuous scrolling animation */
 }
 
 .review-card {
@@ -71,10 +71,22 @@
     position: relative;
     width: 100%; /* Full width */
     height: 350px; /* Adjust height as needed */
-    padding: 30px 0; /* Add padding to avoid touching top and bottom */
+    padding: 20px 0; /* Add padding to avoid touching top and bottom */
     font-family: 'Comic Neue', sans-serif;
   }
 
+  .review-card {
+    background-color: #D7D2E8;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 20px; /* Adjust horizontal space between reviews */
+    width: 400px; /* Adjust width as needed */
+    max-width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent the review card from shrinking */
+    font: 'Comic Neue', sans-serif;
+    font-family: 'Comic Neue', sans-serif;
+  }
 
   .customer-name {
     font-weight: bold;
@@ -91,5 +103,11 @@
     font-size: 0.85rem;
     color: #000000;
     line-height: 1.5;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    width: max-content; /* Ensure it accommodates all the reviews */
+    animation: scroll 180s linear infinite; /* Continuous scrolling animation */
   }
 }
