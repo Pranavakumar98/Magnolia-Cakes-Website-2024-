@@ -140,16 +140,14 @@ h1.business-name {
 
 @media (max-width: 890px) {
   h1.business-name {
-    font-size: 96px;
+    font-size: 80px;
   }
 
-  .quote-p-wrapper {
-    margin: 2.5rem 0;
-  }
+  
 
   .quote-p-wrapper .quote {
     font-size: 25px;
-    margin: 0.5rem auto 0.5rem auto;
+    
   }
   .cake-pop {
     width: 140px;
@@ -168,24 +166,26 @@ h1.business-name {
 
 
 @media (max-width: 480px) {
-  .welcome-section {
-    padding: 3rem 0 3rem;
+  .cake-pop {
+    width: 70px;
   }
 
-
-  .welcome-section h2 {
-    font-size: 50px;
+  h1.business-name {
+    font-size: 55px;
   }
 
-  .welcome-body .welcome-cake {
-    width: 75%;
+  .quote-p-wrapper {
+    margin: 1.5rem 0;
   }
 
-  .welcome-body p {
-    font-size: 16px;
+  .quote-p-wrapper .quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 355px) {
+  h1.business-name {
+    font-size: 48px;
   }
 
-  .body-paragaph {
-    width: 75%;
-  }
 }
