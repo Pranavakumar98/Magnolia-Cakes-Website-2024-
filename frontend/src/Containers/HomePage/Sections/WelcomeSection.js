@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { parseStringToParagraphsByNewline } from "utils/parseStringsToArray";
 import "./WelcomeSection.css";
+import { mixerImg } from "utils/welcome-section";
 
 const WelcomeSection = ({ api }) => {
   const [content, setContent] = useState({
@@ -32,7 +33,7 @@ const WelcomeSection = ({ api }) => {
       {content.image && (
           <img
             className="mixer-img"
-            src={"/images/mixer-nobg.png"}
+            src={mixerImg}
             alt="mixer img"
           />
         )}
