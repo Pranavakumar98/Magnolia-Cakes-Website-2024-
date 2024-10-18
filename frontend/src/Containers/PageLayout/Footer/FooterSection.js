@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './FooterSection.css';
+import { Facebook, Instagram } from "utils/icons";
 
 
 // SocialMediaLink component to handle individual social media links with images
@@ -7,9 +8,9 @@ const SocialMediaLink = ({ socialMedia, account_name, account_link }) => {
   const getIcon = (platform) => {
     switch (platform.toLowerCase()) {
       case 'facebook':
-        return '/images/fb-icon.png';
+        return Facebook;
       case 'instagram':
-        return '/images/insta-icon.png';
+        return Instagram;
       default:
         return '';
     }
