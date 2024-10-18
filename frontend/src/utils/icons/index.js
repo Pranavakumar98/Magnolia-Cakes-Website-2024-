@@ -1,5 +1,5 @@
-import Facebook from "./facebook.svg";
-import Instagram from "./instagram.svg";
+import Facebook from "./fb-icon.png";
+import Instagram from "./insta-icon.png";
 import Car from "./car.svg";
 import ArrowUp from "./fi-br-arrow-up.svg";
 import CloudArrowUp from "./icloud.and.arrow.up.svg";
