@@ -152,7 +152,7 @@ h1.business-name {
     margin: 0.5rem auto 0.5rem auto;
   }
   .cake-pop {
-    width: 110px;
+    width: 140px;
   }
 }
 
@@ -164,17 +164,17 @@ h1.business-name {
 
 @media (max-width: 505px) {
   h1.business-name {
-    font-size: 64px;
+    font-size: 60px;
   }
 }
 
 @media (max-width: 480px) {
   .cake-pop {
-    width: 70px;
+    width: 80px;
   }
 
   h1.business-name {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .quote-p-wrapper {
