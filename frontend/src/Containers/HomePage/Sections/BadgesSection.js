@@ -1,25 +1,26 @@
 import React from "react";
 import "./BadgesSection.css";
+import { badgeCake, badgeHeart, badgeMixing, badgePlant } from "utils/badges-icons";
 
 const BadgesSection = () => {
   const badges = [
     {
-      symbol: "/images/badge-cake.png",  // Cake icon
+      symbol: badgeCake,  // Cake icon
       title: "Cakes and Cupcakes",
       description: "We do custom cakes and cupcakes to suit your every need."
     },
     {
-      symbol: "/images/badge-mixing.png",  // Mixing icon
+      symbol: badgeMixing,  // Mixing icon
       title: "Locally Sourced Ingredients",
       description: "We use high-quality ingredients hand-picked for the best taste."
     },
     {
-      symbol: "/images/badge-heart.png",  // Heart icon
+      symbol: badgeHeart,  // Heart icon
       title: "Love & Care",
       description: "Every cake I create is a cherished slice of someone's special moment."
     },
     {
-      symbol: "/images/badge-plant.png",  // Gluten-free icon
+      symbol: badgePlant,  // Gluten-free icon
       title: "Gluten-Free Friendly",
       description: "We meet any dietary restrictions with our cakes."
     }
