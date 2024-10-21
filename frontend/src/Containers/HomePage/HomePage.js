@@ -12,6 +12,7 @@ import { parseStringToParagraphsByNewline } from "utils/parseStringsToArray";
 import CupcakesBanner from "Components/CupcakesBanner/CupcakesBanner";
 import BadgesSection from "./Sections/BadgesSection";
 import ReviewSection from "./Sections/ReviewSection";
+import './HomePage.css';
 
 
 const HomePage = ({ api }) => {
@@ -84,6 +85,7 @@ const HomePage = ({ api }) => {
       {images.length > 0 && (
         <CarouselGallery quote={quote} images={images} loading={loading} />
       )}
+      <div className="purple-watercolor-bg">
       <CupcakesBanner api={api} />
       <WelcomeSection api={api} />
       <GallerySection api={api} />
@@ -93,6 +95,7 @@ const HomePage = ({ api }) => {
       <DeliverySection />
       {/* <LocationPage api={api} /> */}
       {/* <FooterSection api={api}/> */}
+      </div>
     </>
   );
 };
