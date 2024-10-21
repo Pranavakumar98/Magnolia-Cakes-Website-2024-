@@ -4,7 +4,7 @@
 
 .review-section {
   display: flex;
-  overflow: hidden; /* Hide overflow for strafing effect */
+  overflow: visible; /* Hide overflow for strafing effect */
   position: relative;
   width: 100%; /* Full width */
   height: 400px; /* Adjust height as needed */
@@ -15,7 +15,7 @@
 .reviews-wrapper {
   display: flex;
   width: max-content; /* Ensure it accommodates all the reviews */
-  animation: scroll 120s linear infinite; /* Continuous scrolling animation */
+  animation: scroll 80s linear infinite; /* Continuous scrolling animation */
 }
 
 .review-card {
