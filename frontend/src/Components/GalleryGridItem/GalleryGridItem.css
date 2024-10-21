@@ -3,7 +3,7 @@
   align-items: center;
   vertical-align: middle;
   justify-content: right;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .gallery-grid-item-wrapper h4 {
@@ -88,7 +88,7 @@
   flex-direction: row-reverse;
   justify-content: left;
   margin-left: 0;
-  margin-right: 0rem;
+  margin-right: -1.5rem;
 }
 
 .gallery-grid-item-wrapper.row-reverse h4 {
@@ -109,6 +109,12 @@
   .gallery-grid-item-wrapper .gallery-lines-group {
     width: 130px;
   }
+  .gallery-grid-item-wrapper.row-reverse {
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 0;
+    margin-right: -0.5rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -118,6 +124,17 @@
 
   .gallery-grid-item-wrapper .gallery-lines-group {
     width: 100px;
+  }
+  
+  .gallery-grid-item-wrapper.row-reverse {
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 0;
+    margin-right: 0rem;
+  }
+
+  .gallery-grid-item-wrapper {
+    margin-left: 3rem;
   }
 }
 
@@ -132,6 +149,16 @@
 
   .gallery-grid-item-wrapper.row-reverse .gallery-lines-group {
     width: 90px;
+  }
+  .gallery-grid-item-wrapper.row-reverse {
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 0;
+    margin-right: 0rem;
+  }
+
+  .gallery-grid-item-wrapper {
+    margin-left: 2rem;
   }
 }
 
@@ -152,6 +179,16 @@
 
   .gallery-grid-item-wrapper.row-reverse .gallery-lines-group img.gold-line {
     left: 1rem;
+  }
+  .gallery-grid-item-wrapper.row-reverse {
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+
+  .gallery-grid-item-wrapper {
+    margin-left: 2rem;
   }
 }
 
@@ -183,11 +220,14 @@
   .gallery-grid-item-wrapper a {
     min-width: 55%;
   }
+  gallery-grid-item-wrapper {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .gallery-grid-item-wrapper {
-    margin-left: 0.5rem;
+    margin-left: 2rem;
   }
 
   .gallery-grid-item-wrapper.row-reverse {
