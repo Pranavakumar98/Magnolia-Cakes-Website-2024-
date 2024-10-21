@@ -517,25 +517,25 @@
   .welcome-body .body-content {
     width: 90%;
     text-align: center;
-    margin: 0 auto 1rem auto;
+  
   }
 
   .welcome-body p {
     font-size: 18px;
     width: 100%;
     padding-left: 0;
-    margin: 2rem auto;
+    margin: 1rem 0;
   }
 
   .welcome-body img.welcome-cake {
     width: 80%;
-    margin: 1rem auto;
+    margin: 0rem auto;
     padding-right: 0;
   }
 
   .quote-wrapper {
     width: 90%;
-    margin: 1rem auto;
+    margin: 0rem auto;
   }
 
   .quote-wrapper .welcome-quote {
