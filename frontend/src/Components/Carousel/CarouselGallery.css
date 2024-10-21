@@ -34,8 +34,8 @@ html, body {
 .swiper {
   aspect-ratio: 19/20;
   height: 580px; /* Shrink the height */
-  max-height: 450px; /* Adjust max-height to shrink further */
-  width: 20%; /* Shrink the width to 20% */
+  max-height: 500px; /* Adjust max-height to shrink further */
+  width: 30%; /* Shrink the width to 20% */
   margin: 50px 50px 50px auto; /* Ensure the margin is appropriate */
   display: inline-block;
 }
@@ -98,6 +98,7 @@ html, body {
 @media (min-width: 2800px) {
   .swiper {
     height: 951px;
+    width: 30%;
     /* max-width: 1500px; */
   }
 
@@ -108,13 +109,13 @@ html, body {
 
 @media (max-width: 1930px) {
   .swiper {
-    height: 744px;
+    height: 600px;
   }
 }
 
 @media (max-width: 1600px) {
   .swiper {
-    height: 678px;
+    height: 600px;
   }
 
   .carousel-wrapper {
@@ -135,19 +136,19 @@ html, body {
 
 @media (max-width: 1400px) {
   .swiper {
-    height: 500px;
+    height: auto;
   }
 }
 
 @media (max-width: 1240px) {
   .swiper {
-    height: 515px;
+    height: auto;
   }
 }
 
 @media (max-width: 1134px) {
   .swiper {
-    height: 449px;
+    height: auto;
   }
 }
 
@@ -162,17 +163,10 @@ html, body {
   }
 
   .swiper {
-    height: 423px;
+    height: auto;
   }
 
-  .intro-quote.mobile {
-    display: block;
-    width: 100%;
-    margin: 50px 50px 50px 50px;
-    overflow-x: hidden;
-    overflow: hidden;
-    
-  }
+
 }
 
 @media (max-width: 890px) {
