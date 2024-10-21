@@ -36,14 +36,14 @@
 }
 
 .about-us-section .about-us-text h2 {
-  font-size: 80px;
+  font-size: 70px;
   /* font-family: "Pacifico", cursive; */
   font-family: "Sacramento", cursive;
   margin: 0;
 }
 
 .about-us-section .about-us-text p {
-  font-size: 24px;
+  font-size: 22px;
   width: 70%;
   font-family: "Comic Neue", cursive;
   text-align: center;
@@ -64,11 +64,11 @@
   }
 
   .about-us-section .about-us-text h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .about-us-section .about-us-text p {
-    font-size: 21px;
+    font-size: 18px;
     width: 60%;
   }
 }
@@ -82,6 +82,14 @@
   .about-us-section .about-us-text p {
     width: 80%;
   }
+  .about-us-section .about-us-text h2 {
+    font-size: 45px;
+  }
+
+  .about-us-section .about-us-text p {
+    font-size: 15px;
+    width: 60%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -90,11 +98,11 @@
   }
 
   .about-us-section .about-us-text h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .about-us-section .about-us-text p {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 1rem;
   }
 }
