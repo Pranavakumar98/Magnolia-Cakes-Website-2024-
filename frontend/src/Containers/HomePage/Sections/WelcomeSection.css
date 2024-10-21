@@ -317,6 +317,13 @@
 
 @media screen and (max-width: 1400px) {
 
+
+  .welcome-section {
+   
+    height: 800px; /* Let the height adjust to content */
+ 
+  }
+
   .welcome-section h2 {
     display: block;
     text-align: center;
@@ -358,6 +365,12 @@
 
 @media screen and (max-width: 1300px) {
 
+  .welcome-section {
+   
+    height: 700px; /* Let the height adjust to content */
+ 
+  }
+
   .welcome-section h2 {
     display: block;
     text-align: center;
@@ -372,7 +385,7 @@
 
   .welcome-body img.welcome-cake {
     width: fit-content(100%); /* Image takes up 40% of the width */
-    height: 320px;
+    height: 370px;
     object-fit: contain;
     margin-left: 2rem; /* Adds space between the text and the image */
     margin-right: 0; /* Ensures no margin on the right */
@@ -398,6 +411,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+
+  .welcome-section {
+   
+    height: 700px; /* Let the height adjust to content */
+ 
+  }
 
   .welcome-section h2 {
     display: block;
@@ -533,10 +553,7 @@
     padding-right: 0;
   }
 
-  .quote-wrapper {
-    width: 90%;
-    margin: 0rem auto;
-  }
+  
 
   .quote-wrapper .welcome-quote {
     font-size: 18px;
