@@ -1,0 +1,9 @@
+
+/* Used to change background in home page */
+.purple-watercolor-bg {
+    background-image: url("frontend/src/utils/purple-blue-watercolour-bg.jpeg");
+    /* background-image: url("./utils/brown-gold-bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
