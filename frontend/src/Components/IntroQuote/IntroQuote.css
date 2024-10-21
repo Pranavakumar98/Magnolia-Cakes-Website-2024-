@@ -101,7 +101,7 @@ h1.business-name {
 
 @media (max-width: 1134px) {
   h1.business-name {
-    font-size: 75px;
+    font-size: 85px;
   }
 
   .quote-p-wrapper .quote {
@@ -112,11 +112,14 @@ h1.business-name {
   .quote-p-wrapper {
     margin: 1.5rem 0 1.5rem;
   }
+  .cake-pop {
+    width: 60px;
+  }
 }
 
 @media (max-width: 1024px) {
   h1.business-name {
-    font-size: 64px;
+    font-size: 75px;
   }
 
   .quote-p-wrapper .quote {
