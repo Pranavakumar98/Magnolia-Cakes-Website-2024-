@@ -87,7 +87,7 @@ const FooterSection = ({ api }) => {
           <ul>
             <li><a href="https://magnoliacake.com.au/contact-us" target="_blank" rel="noopener noreferrer">Contact us</a></li>
             <li><a href="https://magnoliacake.com.au/get-a-quote" target="_blank" rel="noopener noreferrer">Get a quote</a></li>
-            <li><a href="https://magnoliacake.com.au/faq" target="_blank" rel="noopener noreferrer">Faq</a></li>
+            <li><a href="https://magnoliacake.com.au/faq" target="_blank" rel="noopener noreferrer">FAQ</a></li>
           </ul>
         </div>
         <div className="footer-column">
