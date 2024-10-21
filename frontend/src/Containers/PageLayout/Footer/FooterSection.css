@@ -121,5 +121,22 @@
       text-align: center;
   }
 
- 
+ .footer-bottom{
+  font-size: 15px;
+ }
+}
+
+@media (max-width: 400px) {
+  .footer-content {
+      display: block;
+  }
+
+  .footer-column {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+ .footer-bottom{
+  font-size: 12px;
+ }
 }
