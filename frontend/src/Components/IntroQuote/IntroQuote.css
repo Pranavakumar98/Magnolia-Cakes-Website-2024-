@@ -156,7 +156,7 @@ h1.business-name {
 
 @media (max-width: 630px) {
   h1.business-name {
-    font-size: 57px;
+    font-size: 54px;
   }
   .quote-p-wrapper .quote {
     font-size: 20px;
@@ -171,7 +171,7 @@ h1.business-name {
   }
 
   h1.business-name {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .quote-p-wrapper {
@@ -185,7 +185,7 @@ h1.business-name {
 
 @media (max-width: 355px) {
   h1.business-name {
-    font-size: 48px;
+    font-size: 40px;
   }
 
 }
