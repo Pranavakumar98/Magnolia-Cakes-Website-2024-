@@ -1,0 +1,31 @@
+/* Flavours Servings Symphony */
+.flavours-servings-symphony {
+  background-color: #fcf9e9; /* Light cream background */
+  text-align: center;
+  font-family: "Sans-serif";
+  color: black;
+  margin: 0 auto;
+  padding: 8rem 20rem;
+}
+
+.guide-text {
+  text-align: center;
+}
+
+.guide-text h1 {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  color: black;
+}
+
+.guide-text p {
+  margin-top: 20px;
+  font-family: "Comic Neue";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.m-top {
+  margin-top: 70px !important;
+}

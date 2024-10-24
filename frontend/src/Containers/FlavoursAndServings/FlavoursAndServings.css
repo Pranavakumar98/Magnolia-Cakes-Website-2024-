@@ -1,0 +1,272 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+.m-top {
+  margin-top: 70px !important;
+}
+
+@media (max-width: 2100px) {
+  .guide-image img {
+    border-top-left-radius: 45% !important;
+    border-top-right-radius: 45% !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  .guide-text h1 {
+    font-size: 80px !important;
+  }
+  .guide-text p {
+    font-size: 21px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .flavours-and-servings,
+  .flavours-servings-guide,
+  .flavours-servings-symphony,
+  .plan-your-cake {
+    padding: 6rem !important;
+  }
+  .serving-note {
+    padding: 2rem 4rem !important;
+  }
+  .flavours-and-servings h1,
+  .guide-text h1,
+  .plan-your-cake h1,
+  .serving-guide h1,
+  .serving-guide2 h1 {
+    font-size: 64px !important;
+  }
+
+  .flavours-and-servings p.description,
+  .guide-text p,
+  p.description {
+    font-size: 21px !important;
+  }
+
+  .flavours-and-servings .extra-info li {
+    font-size: 21px !important;
+  }
+  .serving-image {
+    max-height: 450px !important;
+  }
+
+  .serving-table-container {
+    margin-inline: 12rem !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .description-plan-cake {
+    max-width: 40% !important;
+  }
+  .serving-image {
+    max-height: 350px !important;
+  }
+  .serving-details {
+    margin-top: 20px !important;
+  }
+  .serving-details .description {
+    max-width: 100% !important;
+  }
+  .serving-note {
+    padding: 2rem 3rem !important;
+  }
+  .serving-table-container {
+    margin-inline: 8rem !important;
+  }
+  .serving-details2 {
+    margin-top: 15px !important;
+  }
+  .delivery-bar p {
+    font-size: 21px !important;
+  }
+}
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .guide-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 40px !important;
+  }
+
+  .guide-image {
+    margin-bottom: 20px !important;
+  }
+
+  .guide-image img {
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+  }
+  .guide-text {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 950px) {
+  .description-and-image {
+    flex-direction: column !important;
+    margin-top: 50px
+  }
+  .description-plan-cake {
+    max-width: 100% !important;
+    margin: 0
+  }
+  .image {
+    width: 100% !important;
+  }
+  .serving-image {
+    max-height: 300px !important;
+  }
+  .serving-details2 {
+    margin-top: 30px !important;
+  }
+  .delivery-bar p {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .flavours-and-servings,
+  .flavours-servings-guide,
+  .flavours-servings-symphony {
+    padding: 6rem 7rem 6rem 7rem !important;
+  }
+  .serving-note {
+    padding: 2rem !important;
+  }
+  .flavours-and-servings p.description,
+  .guide-text p,
+  p.description {
+    font-size: 18px !important;
+  }
+
+  .flavours-and-servings .extra-info li {
+    font-size: 18px !important;
+  }
+
+  .guide-image img {
+    max-height: 500px !important;
+  }
+  .serving-row {
+    flex-direction: column !important;
+    margin-inline: 5rem !important;
+    align-items: center !important;
+  }
+  .serving-row img {
+    width: max-content !important;
+    max-width: 100% !important;
+    max-height: 500px !important;
+  }
+  .serving-row2 {
+    flex-direction: column-reverse !important;
+    margin-inline: 2rem !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .serving-guide2 h1 {
+    text-align: center !important;
+  }
+
+  .serving-details2 .description {
+    text-align: center
+  }
+
+  .serving-details2 {
+    align-items: center !important;
+  }
+  .serving-table-container {
+    margin-inline: 4rem !important;
+  }
+  .description-and-image {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .description-plan-cake {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  .image {
+    width: 100% !important;
+  }
+
+  .image img {
+    max-width: 100% !important;
+  }
+  .serving-guide p,
+  .serving-note {
+    font-size: 0.8rem !important;
+  }
+
+  .serving-table th,
+  .serving-table td {
+    padding: 8px 10px !important;
+  }
+  .delivery-bar p {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .flavours-and-servings .flav-serv-lists {
+    display: block !important;
+    margin: 2rem auto 2rem auto !important;
+  }
+
+  .guide-image img {
+    max-height: 400px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .flavours-and-servings,
+  .flavours-servings-guide,
+  .flavours-servings-symphony,
+  .plan-your-cake {
+    padding: 3rem !important;
+  }
+
+  .flavours-and-servings h1,
+  .guide-text h1,
+  .plan-your-cake h1,
+  .serving-guide h1,
+  .serving-guide2 h1 {
+    font-size: 45px !important;
+  }
+
+  .flavours-and-servings p.description,
+  p.description {
+    font-size: 16px !important;
+  }
+
+  .flavours-and-servings .extra-info li {
+    font-size: 16px !important;
+  }
+
+  .flavours-and-servings .flav-serv-lists .list-wrapper {
+    padding: 0.5rem !important;
+  }
+
+  .flavours-and-servings .extra-info {
+    gap: 2rem !important;
+  }
+  .serving-guide h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .serving-table th,
+  .serving-table td {
+    padding: 6px 8px !important;
+  }
+
+  .serving-guide p,
+  .serving-note {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,102 @@
+/* Flavours and Servings Section */
+.flavours-and-servings {
+  margin: 0 auto;
+  padding: 8rem 20rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf9e9; /* Light cream background */
+}
+
+.flavours-and-servings h1 {
+  text-align: center;
+  font-family: "Alkarta", cursive;
+  font-size: 96px;
+  color: black;
+  font-weight: 400;
+  line-height: 84px;
+  letter-spacing: 0.02em;
+}
+
+.flavours-and-servings p.description {
+  font-size: 24px;
+  text-align: center;
+  margin: 2rem 0;
+  font-family: "Comic Neue";
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Flavours and Servings Lists */
+.flavours-and-servings .flav-serv-lists {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  margin: 5rem auto;
+}
+
+.flavours-and-servings .flav-serv-lists .list-wrapper {
+  flex: 50%;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.list-wrapper h4 {
+  color: black;
+  font-family: "Vollkorn SC";
+}
+
+.list-wrapper ul li {
+  color: black;
+  font-family: "Lemonada";
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+}
+
+/* Extra Information Points */
+.extra-info {
+  list-style-position: outside;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.extra-info li {
+  font-size: 24px;
+  font-family: "Comic Neue";
+  font-weight: 700;
+}
+
+.extra-info li::marker {
+  font-size: 20px;
+  color: black;
+}
+
+.list-wrapper h4 {
+  color: black;
+  font-family: "Vollkorn SC";
+}
+
+.list-wrapper ul li {
+  color: black;
+  font-family: Lemonada;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.flavours-and-servings .extra-info {
+  list-style-position: outside;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.flavours-and-servings .extra-info li {
+  font-size: 24px;
+}
+
+.flavours-and-servings .extra-info li::marker {
+  font-size: 20px;
+}

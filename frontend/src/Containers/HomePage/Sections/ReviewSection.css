@@ -1,0 +1,113 @@
+/* ReviewSection.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+.review-section {
+  display: flex;
+  overflow: visible; /* Hide overflow for strafing effect */
+  position: relative;
+  width: 100%; /* Full width */
+  height: 400px; /* Adjust height as needed */
+  padding: 30px 0; /* Add padding to avoid touching top and bottom */
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.reviews-wrapper {
+  display: flex;
+  width: max-content; /* Ensure it accommodates all the reviews */
+  animation: scroll 80s linear infinite; /* Continuous scrolling animation */
+}
+
+.review-card {
+  background-color: #D7D2E8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 20px; /* Adjust horizontal space between reviews */
+  width: 500px; /* Adjust width as needed */
+  max-width: 500px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent the review card from shrinking */
+  font: 'Comic Neue', sans-serif;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.name-and-stars {
+  display: flex;
+  justify-content: space-between; /* Align name to the left and stars to the right */
+  align-items: center;
+}
+
+.customer-name {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stars {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.review-description {
+  font-size: 1.05rem;
+  color: #000000;
+  line-height: 1.5;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+/* Keyframes for continuous horizontal scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at normal position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move completely off the left side of the first set */
+  }
+}
+
+@media (max-width: 768px) {
+  .review-section {
+    display: flex;
+    overflow: hidden; /* Hide overflow for strafing effect */
+    position: relative;
+    width: 100%; /* Full width */
+    height: 350px; /* Adjust height as needed */
+    padding: 20px 0; /* Add padding to avoid touching top and bottom */
+    font-family: 'Comic Neue', sans-serif;
+  }
+
+  .review-card {
+    background-color: #D7D2E8;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 20px; /* Adjust horizontal space between reviews */
+    width: 400px; /* Adjust width as needed */
+    max-width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent the review card from shrinking */
+    font: 'Comic Neue', sans-serif;
+    font-family: 'Comic Neue', sans-serif;
+  }
+
+  .customer-name {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
+
+  .stars {
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .review-description {
+    font-size: 0.85rem;
+    color: #000000;
+    line-height: 1.5;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    width: max-content; /* Ensure it accommodates all the reviews */
+    animation: scroll 180s linear infinite; /* Continuous scrolling animation */
+  }
+}

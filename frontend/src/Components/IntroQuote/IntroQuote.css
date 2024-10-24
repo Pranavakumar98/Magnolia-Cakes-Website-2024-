@@ -1,0 +1,194 @@
+h1.business-name {
+  font-family: "Sacramento", cursive;
+  font-size: 90px;
+  text-align: center;
+  width: fit-content;
+  white-space: nowrap;
+  
+}
+
+.quote-p-wrapper {
+  margin: 0.4rem 0; /* Reduce margin to bring elements even closer */
+}
+
+.quote-p-wrapper .quote {
+  width: 90%;
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 18px;
+  margin: -0.5rem auto; /* Negative margin to bring the text closer */
+  font-family: 'Comic Neue', cursive;
+  font-weight: lighter;
+  padding: 1rem; /* Minimal padding */
+}
+
+.cake-pop {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  padding: 0.1rem; /* Reduced padding */
+  margin-top: 1rem; /* Overlap the cake icon slightly with the quote */
+}
+
+/* Media queries - Adjust for different screen sizes */
+@media (min-width: 2220px) {
+  h1.business-name {
+    font-size: 150px;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 42px;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 1930px) {
+  h1.business-name {
+    font-size: 130px;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 34px;
+  }
+
+  .cake-pop {
+    width: 110px;
+  }
+}
+
+@media (max-width: 1600px) {
+  h1.business-name {
+    font-size: 100px;
+    padding-top: 1rem;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 21px;
+    width: 100%;
+  }
+
+  .cake-pop {
+    width: 85px;
+  }
+}
+
+
+
+@media (max-width: 1400px) {
+  h1.business-name {
+    font-size: 90px;
+  }
+
+  .quote-p-wrapper {
+    margin: 2rem 0 2rem;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 24px;
+  }
+
+  .cake-pop {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .quote-p-wrapper .quote {
+    font-size: 21px;
+    white-space: unset;
+  }
+}
+
+@media (max-width: 1134px) {
+  h1.business-name {
+    font-size: 85px;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 18px;
+    white-space: unset;
+  }
+
+  .quote-p-wrapper {
+    margin: 1.5rem 0 1.5rem;
+  }
+  .cake-pop {
+    width: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1.business-name {
+    font-size: 75px;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 975px) {
+  h1.business-name {
+    font-size: 59px;
+  }
+
+  .quote-p-wrapper {
+    margin: 1rem 0 1rem;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 890px) {
+  h1.business-name {
+    font-size: 80px;
+  }
+
+  
+
+  .quote-p-wrapper .quote {
+    font-size: 25px;
+    
+  }
+  .cake-pop {
+    width: 140px;
+  }
+}
+
+@media (max-width: 630px) {
+  h1.business-name {
+    font-size: 54px;
+  }
+  .quote-p-wrapper .quote {
+    font-size: 20px;
+    margin: 0.5rem auto 0.5rem auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cake-pop {
+    width: 70px;
+  }
+
+  h1.business-name {
+    font-size: 50px;
+  }
+
+  .quote-p-wrapper {
+    margin: 1.5rem 0;
+  }
+
+  .quote-p-wrapper .quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 355px) {
+  h1.business-name {
+    font-size: 40px;
+  }
+
+}

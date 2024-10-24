@@ -1,0 +1,561 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  padding: 7rem 0;
+  position: relative;
+}
+
+.mixer-img {
+  position: absolute;
+  top: 0; /* Aligns the image to the top */
+  left: 5; /* Aligns the image to the left */
+  width: 350px; /* Adjust the size of the image */
+  height: auto;
+  margin: 30px; /* Adds a bit of space from the top and left edge */
+  padding: 0 2rem 2rem 2rem;
+  z-index: 10; /* Ensures the image stays above other elements */
+  
+}
+.welcome-section h2 {
+  display: block;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-size: 80px;
+}
+
+.welcome-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Aligns both elements at the bottom */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0; /* Padding to keep content away from the edges */
+}
+
+.welcome-body .body-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  width: 40%;
+}
+
+.welcome-body p {
+  font-size: 30px;
+  text-align: center;
+  white-space: pre-wrap;
+  width: 110%; /* Ensure the text takes up half the width */
+  padding-left: 5rem; /* Adds space between the text and the image */
+  margin: 5rem 5 5 5;
+  font-weight: bold;
+}
+
+.welcome-body img.welcome-cake {
+  width: fit-content(100%); /* Image takes up 40% of the width */
+  height: 600px;
+  object-fit: contain;
+  margin-left: 2rem; /* Adds space between the text and the image */
+  margin-right: 0; /* Ensures no margin on the right */
+  padding-right: 0; /* Remove any padding on the right */
+}
+
+.magnolia-flower {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin: 5rem auto;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-wrapper .welcome-quote {
+  text-align: center;
+  font-size: 24px;
+  margin: auto 0 auto 0;
+}
+@media screen and (max-width: 2000px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 70px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 580px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 29px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  
+}
+
+
+@media screen and (max-width: 1900px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 70px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 550px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 28px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width: 1800px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 70px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 490px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 24px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width: 1700px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 70px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 470px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 24px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width: 1600px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 65px;
+    
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: 820px; /* Image takes up 40% of the width */
+    height: 400px;
+    
+    object-fit: fill;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+    
+  }
+
+  .welcome-body p {
+    font-size: 21px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 8rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  
+  }
+
+  .mixer-img {
+    
+    
+    width: 300px; /* Adjust the size of the image */
+    height: auto;
+    
+  }
+  
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 60px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 450px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 22px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  .mixer-img {
+    
+    
+    width: 250px; /* Adjust the size of the image */
+    height: auto;
+    
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+
+  .welcome-section {
+   
+    height: 800px; /* Let the height adjust to content */
+ 
+  }
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 60px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 430px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 21px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  .mixer-img {
+    
+    
+    width: 250px; /* Adjust the size of the image */
+    height: auto;
+    
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
+  .welcome-section {
+   
+    height: 700px; /* Let the height adjust to content */
+ 
+  }
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 50px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 370px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 18px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  .mixer-img {
+    
+    
+    width: 230px; /* Adjust the size of the image */
+    height: auto;
+    
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+  .welcome-section {
+   
+    height: 700px; /* Let the height adjust to content */
+ 
+  }
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 50px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 350px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 18px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  .mixer-img {
+    
+    
+    width: 220px; /* Adjust the size of the image */
+    height: auto;
+    
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+  .welcome-section h2 {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 60px;
+  }
+
+
+  .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    height: 370px;
+    object-fit: contain;
+    margin-left: 2rem; /* Adds space between the text and the image */
+    margin-right: 0; /* Ensures no margin on the right */
+    padding-right: 0; /* Remove any padding on the right */
+  }
+
+  .welcome-body p {
+    font-size: 16px;
+    text-align: center;
+    white-space: pre-wrap;
+    width: 100%; /* Ensure the text takes up half the width */
+    padding-left: 5rem; /* Adds space between the text and the image */
+    margin: 5rem 5 5 5;
+    font-weight: bold;
+  }
+  .mixer-img {
+    
+    
+    width: 210px; /* Adjust the size of the image */
+    height: auto;
+    left: 0;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+   .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Let the height adjust to content */
+    padding: 2rem 0; /* Adjust padding for better spacing */
+  }
+
+  .mixer-img {
+    width: 30%; /* Reduce width as per your adjustment */
+    margin: 0; /* Reset margin */
+    padding: 0;
+    position: static; /* Reset positioning */
+  }
+
+  .welcome-section h2 {
+    width: 90%; /* Make heading responsive */
+    font-size: 40px; /* Adjust font size */
+    margin: 1rem auto;
+  }
+
+  .welcome-body {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    bottom: unset;
+    width: 100%;
+    padding: 0;
+  }
+
+  .welcome-body .body-content {
+    width: 90%;
+    text-align: center;
+  
+  }
+
+  .welcome-body p {
+    font-size: 18px;
+    width: 100%;
+    padding-left: 0;
+    margin: 1rem 0;
+  }
+
+  .welcome-body img.welcome-cake {
+    width: 80%;
+    margin: 0rem auto;
+    padding-right: 0;
+  }
+
+  
+
+  .quote-wrapper .welcome-quote {
+    font-size: 18px;
+  }
+}

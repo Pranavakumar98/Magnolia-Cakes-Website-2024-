@@ -1,0 +1,114 @@
+
+p.description {
+  font-size: 24px;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-family: Comic Neue;
+  font-weight: 700;
+  text-align: left;
+}
+
+.serving-guide2 {
+  background-color: #fbded8;
+  text-align: -webkit-right;
+}
+
+.serving-row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 95%;
+  gap: 5rem;
+}
+
+.serving-guide2 h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  color: black;
+}
+
+.serving-guide2 h1 {
+  text-align: start;
+}
+
+.serving-guide2 p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.serving-guide2 p {
+  max-width: 95%;
+}
+
+.serving-details2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.serving-table-container {
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.serving-image {
+  max-height: 500px;
+}
+
+.serving-table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.serving-table th,
+.serving-table td {
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.serving-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.serving-table td {
+  background-color: #fff;
+}
+
+.serving-note {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  margin: 0 auto 0 auto;
+  padding: 2rem 6rem;
+  font-family: Comic Neue;
+  font-weight: 700;
+}
+
+.top-none {
+  border-top: none !important;
+}
+
+.bottom-none {
+  border-bottom: none !important;
+}
+
+.left-none {
+  border-left: none !important;
+}
+
+.right-none {
+  border-right: none !important;
+}
+
+table td,
+th {
+  border-color: darkgray !important;
+  background: transparent !important;
+}
