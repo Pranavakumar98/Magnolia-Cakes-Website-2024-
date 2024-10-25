@@ -137,6 +137,7 @@ html, body {
 @media (max-width: 1400px) {
   .swiper {
     height: auto;
+    width: 35%;
   }
 }
 
@@ -232,6 +233,7 @@ html, body {
     margin: auto;
     overflow-x: hidden;
     overflow: hidden;
+    align-items: center;
     
   }
 
