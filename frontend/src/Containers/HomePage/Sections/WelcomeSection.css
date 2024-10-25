@@ -549,10 +549,17 @@
 
   .welcome-body img.welcome-cake {
     width: 80%;
-    margin: 0rem auto;
+    margin: -5rem auto;
     padding-right: 0;
   }
-
+  /* .welcome-body img.welcome-cake {
+    width: fit-content(100%); /* Image takes up 40% of the width */
+    /* height: 370px; */
+    /* object-fit: contain; */
+    /* margin-left: 2rem; Adds space between the text and the image */
+    /* margin-right: 0; Ensures no margin on the right */
+    /* padding-right: 0; Remove any padding on the right */
+  
   
 
   .quote-wrapper .welcome-quote {
