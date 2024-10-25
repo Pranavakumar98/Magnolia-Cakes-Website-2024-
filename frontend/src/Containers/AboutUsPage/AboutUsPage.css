@@ -39,7 +39,7 @@
 
 .about-us-title {
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: -2rem;
   gap: 2rem;
 }
 
@@ -60,7 +60,7 @@
   }
 
   .about-us-title {
-    margin-bottom: 2rem;
+    margin-bottom: -3rem;
   }
 
   .about-us-title .magnolia-flower {
@@ -147,7 +147,7 @@
   .about-us-title {
     flex-direction: column;
     gap: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .about-us-title .magnolia-flower {
