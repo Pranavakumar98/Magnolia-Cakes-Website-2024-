@@ -109,12 +109,18 @@
 
 @media (max-width: 810px) {
   .about-us-section {
-    background-image: none;
+    background-image: url("../../../utils/cover/about-us-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     padding: 0;
     aspect-ratio: auto;
     margin-top: 2.5rem;
     margin-bottom: 4.5rem;
     width: 100%;
+    
+    
   }
 
   .about-us-section .about-us-portrait {
@@ -123,7 +129,12 @@
     width: 225px;
     height: auto;
     margin-bottom: 3rem;
+    padding-top: 3rem;
+    opacity: 0.90;
+    
   }
+
+  
 
   .about-us-section .about-us-text {
     display: flex;
@@ -142,21 +153,21 @@
   .about-us-section .about-us-text h2 {
     text-align: center;
     font-size: 50px;
-    color: black;
+    color: white;
   }
 
   .about-us-section .about-us-text p {
     font-size: 21px;
     width: 100%;
-    color: black;
+    color: white;
   }
 
   .about-us-section .about-us-text .readmore-white {
-    display: none;
+    display: block;
   }
 
   .about-us-section .about-us-text .readmore-black {
-    display: block;
+    display: none;
   }
 }
 
