@@ -180,14 +180,15 @@ html, body {
   .intro-quote {
     display: none;
   }
+  
 
   .intro-quote.mobile {
     display: block;
     width: 100%;
-    margin: 10px 50px 50px 50px;
+    margin: 10%;
     overflow-x: hidden;
     overflow: hidden;
-    
+    align-items: center;
   }
 
   .quote-wrapper2 {
@@ -230,7 +231,7 @@ html, body {
   .intro-quote.mobile {
     display: block;
     width: 100%;
-    margin: auto;
+    margin: 10%;
     overflow-x: hidden;
     overflow: hidden;
     align-items: center;
