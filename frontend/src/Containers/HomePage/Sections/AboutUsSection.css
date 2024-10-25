@@ -172,9 +172,7 @@
 }
 
 @media (max-width: 480px) {
-  .about-us-section {
-    margin-bottom: 2rem;
-  }
+  
 
   .about-us-section .about-us-portrait {
     margin-bottom: 2rem;
