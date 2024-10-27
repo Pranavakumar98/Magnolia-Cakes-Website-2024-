@@ -8,7 +8,7 @@ const PlanYourCake = ({ flavServInfo }) => (
     {/* Cake description and image */}
     <div className="description-and-image">
       <p className="description description-plan-cake">
-        At Magnolia Cake Shop, we transform cake-making into an art, creating
+        At Magnolia Cakes, we transform cake-making into an art, creating
         desserts that are both stunning and delicious. Our custom cakes, perfect
         for any occasion, are tailored to your vision, ensuring a delightful
         experience for every guest. With a range of sizes and styles, we craft

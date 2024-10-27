@@ -45,7 +45,7 @@ const ContactUsPage = ({ api }) => {
 
       if (res.status === 200) {
         console.log("Form submit success.");
-        alert("Form is submitted.");
+        alert("Thank you for contacting us.We will be in touch soon!");
         setLoading(false);
       }
     } catch (err) {

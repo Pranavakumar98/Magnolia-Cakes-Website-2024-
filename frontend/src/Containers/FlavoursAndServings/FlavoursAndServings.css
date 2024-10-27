@@ -25,10 +25,14 @@
 
 @media (max-width: 1440px) {
   .flavours-and-servings,
-  .flavours-servings-guide,
-  .flavours-servings-symphony,
+  .flavours-servings-guide {
+    padding: 2rem 6rem !important;
+  }
+  .flavours-servings-symphony {
+    padding: 4rem 6rem 1rem 6rem !important;
+  }
   .plan-your-cake {
-    padding: 6rem !important;
+    padding: 1.5rem 6rem 0.5rem 6rem !important;
   }
   .serving-note {
     padding: 2rem 4rem !important;
@@ -130,9 +134,11 @@
 
 @media (max-width: 768px) {
   .flavours-and-servings,
-  .flavours-servings-guide,
+  .flavours-servings-guide {
+    padding: 2rem 7rem 2rem 7rem !important;
+  }
   .flavours-servings-symphony {
-    padding: 6rem 7rem 6rem 7rem !important;
+    padding: 4rem 7rem 0.5rem 7rem !important;
   }
   .serving-note {
     padding: 2rem !important;
@@ -225,11 +231,17 @@
 }
 
 @media (max-width: 480px) {
-  .flavours-and-servings,
   .flavours-servings-guide,
-  .flavours-servings-symphony,
   .plan-your-cake {
-    padding: 3rem !important;
+    padding: 2rem !important;
+  }
+
+  .flavours-and-servings {
+    padding: 3rem 3rem 1rem 3rem !important;
+  }
+
+  .flavours-servings-symphony{
+    padding: 3rem 3rem 0.25rem 3rem !important;
   }
 
   .flavours-and-servings h1,
@@ -268,5 +280,8 @@
   .serving-guide p,
   .serving-note {
     font-size: 1rem !important;
+  }
+  .delivery-section {
+    margin-top: 0 !important;
   }
 }
