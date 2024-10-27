@@ -1,21 +1,15 @@
 # Magnolia-Cakes-Website
 
-A full-stack application for Magnolia Cakes and Cupcakes with the Frontend created with ReachJS, Backend created with django and a PostgreSQL database server. All of the mentioned components are currently hosted on Google Cloud.
+A full-stack application for Magnolia Cakes and Cupcakes with the Frontend created with ReachJS, Backend created with django and a PostgreSQL database server. The front end and backend are hosted on google app engine while the database was migrated to Amazon RDS. Previously it was hosted on google SQL 
 
 
 ## Github URL:
 
-https://github.com/G2-Magnolia-Cakes-Website/Magnolia-Cakes-Website
+https://github.com/Pranavakumar98/Magnolia-Cakes-Website-2024-
 
-## Developed by:
-
-Kim Ta (s3840049)
-
-Omer Yalavac (s3849677)
-
-Quang Minh Duong (s3759757) 
-
-Ya-Tse Lu (s3933328)
+## Developers :
+Original website developed by - Kim Ta (s3840049),Omer Yalavac (s3849677),Quang Minh Duong (s3759757) ,Ya-Tse Lu (s3933328)
+UI and security updates - Pranava Kumar Sivshanmugam (s3986383), Matthew Rigo(s3840775), Jayant Chowdeshwar Settubhaktuni (s3959910)
 
 
 ## Release notes:
@@ -47,7 +41,8 @@ Ya-Tse Lu (s3933328)
 - Manage items to be put on gallery page
 - Manage items to be put on online store
 - Manage items to be put on workshop page
-- Manage items to be put on flavours and serving page
+- Manage items to be put on flavours and serving page including images and information
+- Add reviews to homepage
 - Receive quotes request from user and able to generate excel file to conduct business research
 - Manage promotions code 
 - Access user purchase history
