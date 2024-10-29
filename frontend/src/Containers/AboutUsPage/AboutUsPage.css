@@ -180,10 +180,11 @@
 
   .about-us-page .page-content {
     margin-left: 2.5rem;
+    margin-top: 2rem;
   }
 
   .about-us-page .page-content p {
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .about-us-page .portrait-wrapper img.about-us-portrait {
     width: 100%;
@@ -192,6 +193,15 @@
     vertical-align: top;
   }
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 892px) {
   .about-us-page {
