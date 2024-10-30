@@ -109,7 +109,10 @@
 
 @media (max-width: 810px) {
   .about-us-section {
-    background-image: url("../../../utils/cover/about-us-bg.png");
+    background-image: linear-gradient(
+      rgba(49, 47, 47, 0.521),
+      rgba(59, 56, 56, 0.503)
+    ),url("../../../utils/cover/about-us-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,6 +125,16 @@
     
     
   }
+
+  .about-us-portrait {
+    display: block;
+    width: 40%; /* Adjust as needed */
+    margin-top: 2.5rem;
+    margin: 0 auto; /* Centering */
+    padding: 0; /* Ensure no padding */
+    
+  }
+  
 
   .about-us-section .about-us-portrait {
     display: block;
@@ -172,9 +185,7 @@
 }
 
 @media (max-width: 480px) {
-  .about-us-section {
-    margin-bottom: 2rem;
-  }
+  
 
   .about-us-section .about-us-portrait {
     margin-bottom: 2rem;
