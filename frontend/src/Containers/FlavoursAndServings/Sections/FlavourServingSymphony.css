@@ -20,12 +20,12 @@
 }
 
 .guide-text p {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-family: "Comic Neue";
   font-size: 24px;
   font-weight: 700;
 }
 
-.m-top {
+/* .m-top {
   margin-top: 70px !important;
-}
+} */

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 .m-top {
-  margin-top: 70px !important;
+  margin-top: 70px;
 }
 
 @media (max-width: 2100px) {
@@ -24,8 +24,10 @@
 }
 
 @media (max-width: 1440px) {
-  .flavours-and-servings,
   .flavours-servings-guide {
+    padding: 2rem 10rem !important;
+  }
+  .flavours-and-servings {
     padding: 2rem 6rem !important;
   }
   .flavours-servings-symphony {
@@ -112,7 +114,8 @@
 @media (max-width: 950px) {
   .description-and-image {
     flex-direction: column !important;
-    margin-top: 50px
+    margin-top: 0;
+    gap: 0 !important;
   }
   .description-plan-cake {
     max-width: 100% !important;
@@ -129,6 +132,9 @@
   }
   .delivery-bar p {
     font-size: 18px !important;
+  }
+  .m-top {
+    margin-top: 40px !important;
   }
 }
 
@@ -154,12 +160,13 @@
   }
 
   .guide-image img {
-    max-height: 500px !important;
+    max-height: 400px !important;
   }
   .serving-row {
     flex-direction: column !important;
     margin-inline: 5rem !important;
     align-items: center !important;
+    gap: 1rem !important;
   }
   .serving-row img {
     width: max-content !important;
@@ -192,9 +199,13 @@
     text-align: center !important;
   }
 
+  .m-top {
+    margin-top: 20px !important;
+  }
+
   .description-plan-cake {
     width: 100% !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
     text-align: center !important;
   }
 
@@ -226,7 +237,7 @@
   }
 
   .guide-image img {
-    max-height: 400px !important;
+    max-height: 300px !important;
   }
 }
 

@@ -9,7 +9,7 @@ const FlavoursServingsGuide = ({ flavServInfo }) => (
       </div>
       <div className="guide-text">
         <h1>{flavServInfo.heading1}</h1>
-        <p>{flavServInfo.description1}</p>
+        <p className="guide-top-descp">{flavServInfo.description1}</p>
       </div>
     </div>
   </div>

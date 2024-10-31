@@ -1,11 +1,12 @@
 /* Flavours Servings Guide */
+
 .flavours-servings-guide {
-  background-color: #f8cde3; /* Light pink background */
+  background-color: #f8cde3; 
   text-align: center;
   font-family: "Sans-serif";
   color: #4a403a;
   margin: 0 auto;
-  padding: 2rem 15rem;
+  padding: 2rem 20rem;
 }
 
 .guide-content {
@@ -23,7 +24,7 @@
 .guide-image img {
   width: 120%;
   height: auto;
-  max-height: 500px;
+  max-height: 450px;
   object-fit: contain;
   position: relative;
   left: -10%;
@@ -43,10 +44,12 @@
   color: black;
 }
 
-.guide-text p {
+.guide-text p.guide-top-descp {
   margin-top: 20px;
   font-family: "Comic Neue";
   font-size: 24px;
   font-weight: 700;
   text-align: center;
 }
+
+
