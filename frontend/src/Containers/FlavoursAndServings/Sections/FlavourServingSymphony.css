@@ -1,25 +1,33 @@
 /* Flavours Servings Symphony */
 .flavours-servings-symphony {
   background-color: #fcf9e9; /* Light cream background */
-  text-align: center;
+  text-align: center !important;
   font-family: "Sans-serif";
   color: black;
   margin: 0 auto;
   padding: 4rem 20rem 2rem 20rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; 
+  height: 100%;
 }
 
-.guide-text {
+.guide-text2 {
   text-align: center;
+  justify-content: center !important; 
+  align-items: center !important;
+  width: 100%;
 }
 
-.guide-text h1 {
+.guide-text2 h1 {
   text-align: center;
   font-family: "Sacramento", cursive;
   font-size: 96px;
   color: black;
+ 
 }
 
-.guide-text p {
+.guide-text2 p {
   margin-top: 20px;
   font-family: "Comic Neue";
   font-size: 23px;
@@ -27,5 +35,5 @@
 }
 
 .m-top {
-  margin-top: 70px !important;
+  margin-top: 30px !important;
 }

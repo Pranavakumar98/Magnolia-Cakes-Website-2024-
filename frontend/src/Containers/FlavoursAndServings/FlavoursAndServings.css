@@ -26,13 +26,12 @@
 @media (max-width: 1440px) {
   .flavours-and-servings,
   .flavours-servings-guide,
-  .flavours-servings-symphony,
+  
   .flavours-servings-guide {
     padding: 2rem 6rem !important;
   }
-  .flavours-servings-symphony {
-    padding: 4rem 6rem 1rem 6rem !important;
-  }
+  
+  
   .plan-your-cake {
     padding: 6rem !important;
     padding: 1.5rem 6rem 0.5rem 6rem !important;
@@ -42,6 +41,7 @@
   }
   .flavours-and-servings h1,
   .guide-text h1,
+  .guide-text2 h1,
   .plan-your-cake h1,
   .serving-guide h1,
   .serving-guide2 h1 {
@@ -106,6 +106,8 @@
     text-align: center !important;
     
   }
+
+  
 }
 /* Responsive Design */
 @media (max-width: 1000px) {

@@ -4,7 +4,7 @@ import "./FlavourServingSymphony.css"
 const FlavoursServingSymphony = ({ flavServInfo }) => (
   <>
     <div className="flavours-servings-symphony">
-      <div className="guide-text">
+      <div className="guide-text2">
         <h1>{flavServInfo.heading2}</h1>
         <p className="m-top">{flavServInfo.description2}</p>
       </div>
