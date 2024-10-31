@@ -21,6 +21,12 @@
   .guide-text p {
     font-size: 21px !important;
   }
+  .guide-text2 h1 {
+    font-size: 80px !important;
+  }
+  .guide-text2 p {
+    font-size: 21px !important;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -50,6 +56,11 @@
 
   .flavours-and-servings p.description,
   .guide-text p,
+  p.description {
+    font-size: 21px !important;
+  }
+
+  .guide-text2 p,
   p.description {
     font-size: 21px !important;
   }
@@ -92,6 +103,11 @@
     font-size: 21px !important;
   }
   .guide-text p{
+  
+    font-size: 20px !important;
+  }
+
+  .guide-text2 p{
   
     font-size: 20px !important;
   }
