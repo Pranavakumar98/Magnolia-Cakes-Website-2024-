@@ -1,55 +1,51 @@
-/* Flavours Servings Guide */
-
+/* FlavourServingGuide.css */
 .flavours-servings-guide {
-  background-color: #f8cde3; 
-  text-align: center;
-  font-family: "Sans-serif";
-  color: #4a403a;
-  margin: 0 auto;
-  padding: 2rem 20rem;
+  background-color: #f8cde3;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .guide-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-}
-
-.guide-image {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+  max-width: 800px;
 }
 
 .guide-image img {
-  width: 120%;
+  border-radius: 20px;
+  width: 300px;
   height: auto;
-  max-height: 450px;
-  object-fit: contain;
-  position: relative;
-  left: -10%;
-  border-top-left-radius: 60%;
-  border-top-right-radius: 60%;
+  object-fit: cover;
 }
 
 .guide-text {
+  margin-left: 2rem;
   text-align: center;
-  padding-left: 20px;
 }
 
 .guide-text h1 {
-  text-align: center;
-  font-family: "Sacramento", cursive;
-  font-size: 96px;
-  color: black;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  width: 500px;
 }
 
-.guide-text p.guide-top-descp {
-  margin-top: 20px;
-  font-family: "Comic Neue";
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
+.guide-text .guide-top-descp {
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: #333;
 }
 
-
+@media (width: 1024px){
+  .guide-text .guide-top-descp {
+    
+    font-size: 0.5rem;
+    
+  }
+};

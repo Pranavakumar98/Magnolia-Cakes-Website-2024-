@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 .m-top {
-  margin-top: 70px;
+  margin-top: 70px !important;
 }
 
 @media (max-width: 2100px) {
@@ -24,16 +24,17 @@
 }
 
 @media (max-width: 1440px) {
+  .flavours-and-servings,
+  .flavours-servings-guide,
+  .flavours-servings-symphony,
   .flavours-servings-guide {
-    padding: 2rem 10rem !important;
-  }
-  .flavours-and-servings {
     padding: 2rem 6rem !important;
   }
   .flavours-servings-symphony {
     padding: 4rem 6rem 1rem 6rem !important;
   }
   .plan-your-cake {
+    padding: 6rem !important;
     padding: 1.5rem 6rem 0.5rem 6rem !important;
   }
   .serving-note {
@@ -90,6 +91,21 @@
   .delivery-bar p {
     font-size: 21px !important;
   }
+  .guide-text p{
+  
+    font-size: 20px !important;
+  }
+
+  
+}
+
+
+@media (max-width: 1024px) {
+  .flavours-servings-symphony .guide-text h1{
+    width: 100% !important;
+    text-align: center !important;
+    
+  }
 }
 /* Responsive Design */
 @media (max-width: 1000px) {
@@ -109,13 +125,15 @@
   }
   .guide-text {
     padding-left: 0 !important;
+    font-size: 0.5rem !important;
   }
+
+
 }
 @media (max-width: 950px) {
   .description-and-image {
     flex-direction: column !important;
-    margin-top: 0;
-    gap: 0 !important;
+    margin-top: 50px
   }
   .description-plan-cake {
     max-width: 100% !important;
@@ -133,17 +151,16 @@
   .delivery-bar p {
     font-size: 18px !important;
   }
-  .m-top {
-    margin-top: 40px !important;
-  }
 }
 
 @media (max-width: 768px) {
   .flavours-and-servings,
+  .flavours-servings-guide,
   .flavours-servings-guide {
     padding: 2rem 7rem 2rem 7rem !important;
   }
   .flavours-servings-symphony {
+    padding: 6rem 7rem 6rem 7rem !important;
     padding: 4rem 7rem 0.5rem 7rem !important;
   }
   .serving-note {
@@ -160,13 +177,12 @@
   }
 
   .guide-image img {
-    max-height: 400px !important;
+    max-height: 500px !important;
   }
   .serving-row {
     flex-direction: column !important;
     margin-inline: 5rem !important;
     align-items: center !important;
-    gap: 1rem !important;
   }
   .serving-row img {
     width: max-content !important;
@@ -199,13 +215,9 @@
     text-align: center !important;
   }
 
-  .m-top {
-    margin-top: 20px !important;
-  }
-
   .description-plan-cake {
     width: 100% !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 20px !important;
     text-align: center !important;
   }
 
@@ -237,22 +249,32 @@
   }
 
   .guide-image img {
-    max-height: 300px !important;
+    max-height: 400px !important;
   }
 }
 
 @media (max-width: 480px) {
+  .flavours-and-servings,
   .flavours-servings-guide,
+  .flavours-servings-symphony,
   .plan-your-cake {
+    padding: 3rem !important;
     padding: 2rem !important;
   }
-
   .flavours-and-servings {
     padding: 3rem 3rem 1rem 3rem !important;
   }
-
   .flavours-servings-symphony{
     padding: 3rem 3rem 0.25rem 3rem !important;
+
+  }
+
+  .flavours-servings-symphony .guide-text .h1{
+    margin-bottom: 0.5rem !important;
+  }
+
+  .flavours-servings-symphony .guide-text .m-top{
+    margin-top: 0.5rem !important;
   }
 
   .flavours-and-servings h1,
@@ -294,5 +316,19 @@
   }
   .delivery-section {
     margin-top: 0 !important;
+  }
+
+  .guide-text p{
+  
+    font-size: 15px !important;
+  }
+
+  .guide-text h1 {
+    font-size: 60px !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .guide-text{
+    margin-left: 0 !important;
   }
 }
